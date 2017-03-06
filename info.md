@@ -13,16 +13,16 @@
 
 	* En las tablas siguientes es de preferencia que el ancho ocupe todo el ancho la tabla principal entonces se usan los porcentajes, ya que asi se adapatará al momento de hacer el email responsive, si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
 
-	Tambien se añade estilos inline ``` border-collapse: collapse ``` para evitar de versiones modernas de Outlook añadan espacios entre la tabla y el border.
+	* Tambien se añade estilos inline ``` border-collapse: collapse ``` para evitar de versiones modernas de Outlook añadan espacios entre la tabla y el border.
 
-	En caso de los colores, es preferente utilizar los seis carácteres del código hexagesimal.
+En caso de los colores, es preferente utilizar los seis carácteres del código hexagesimal.
 
-	Cuando se utiliza padding en email, debe especificar cada uno de sus valores, de esta forma 'padding: 10px 3px 10px 4px;' o en su forma larga.
-	Tener en cuenta que es seguro usar padding en los tag td.
-	Como en las tablas el margin no funciona, se usa celdas vacias para crear estos margenes.
+	* Cuando se utiliza padding en email, debe especificar cada uno de sus valores, de esta forma 'padding: 10px 3px 10px 4px;' o en su forma larga.
+	* Tener en cuenta que es seguro usar padding en los tag td.
+	* Como en las tablas el margin no funciona, se usa celdas vacias para crear estos margenes.
 
-	En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font, va dentro del tag a usando el atributo html 'color' 
+	* En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font, va dentro del tag a usando el atributo html 'color' 
 
 	``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ```
 
-	Imagenes como link: para quitar el borde azul típico de los links, se añade el atributo ``` border="0" ``` a la imagen y ``` display="block" ``` .
+	* Imagenes como link: para quitar el borde azul típico de los links, se añade el atributo ``` border="0" ``` a la imagen y ``` display="block" ``` .
