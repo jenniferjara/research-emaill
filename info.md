@@ -14,7 +14,7 @@ En la tabla un tr es igual a una fila, y un td a una columna.
 
 * En las tablas siguientes es de preferencia que el ancho ocupe todo el ancho la tabla principal entonces se usan los porcentajes, ya que asi se adapatará al momento de hacer el email responsive, si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
 
-Tambien se añade estilos inline ```html 'border-collapse: collapse' ``` para evitar de versiones modernas de Outlook añadan espacios entre la tabla y el border.
+Tambien se añade estilos inline ``` border-collapse: collapse ``` para evitar de versiones modernas de Outlook añadan espacios entre la tabla y el border.
 
 En caso de los colores, es preferente utilizar los seis carácteres del código hexagesimal.
 
@@ -24,8 +24,8 @@ Como en las tablas el margin no funciona, se usa celdas vacias para crear estos 
 
 En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font, va dentro del tag a usando el atributo html 'color' 
 
-```html 
+``` 
 <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a>
 ```
 
-Imagenes como link: para quitar el borde azul típico de los links, se añade el atributo ```html border="0" ``` a la imagen y ``` display="block" ``` .
+Imagenes como link: para quitar el borde azul típico de los links, se añade el atributo ``` border="0" ``` a la imagen y ``` display="block" ``` .
