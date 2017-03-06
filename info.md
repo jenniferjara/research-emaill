@@ -22,4 +22,8 @@ Cuando se utiliza padding en email, debe especificar cada uno de sus valores, de
 Tener en cuenta que es seguro usar padding en los tag td.
 Como en las tablas el margin no funciona, se usa celdas vacias para crear estos margenes.
 
-En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font, va dentro del tag a usando el atributo html 'color' ==> <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a>
+En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font, va dentro del tag a usando el atributo html 'color' 
+
+```html 
+<a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a>
+```
