@@ -12,7 +12,7 @@ En la tabla un tr es igual a una fila, y un td a una columna.
 
 *Table: añadir los atributos anteriores y esta vez con un width de 600px y align center, es un ancho seguro para que el mail se muestre en casi todas las pantallas de pc.
 
-	* En las tablas siguientes es de preferencia que el ancho ocupe todo el ancho la tabla principal entonces se usan los porcentajes, ya que asi se adapatará al momento de hacer el email responsive, si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
+* En las tablas siguientes es de preferencia que el ancho ocupe todo el ancho la tabla principal entonces se usan los porcentajes, ya que asi se adapatará al momento de hacer el email responsive, si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
 
 Tambien se añade estilos inline ```html 'border-collapse: collapse' ``` para evitar de versiones modernas de Outlook añadan espacios entre la tabla y el border.
 
