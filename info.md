@@ -15,7 +15,7 @@
 
 	* Tambien se añade estilos inline ``` border-collapse: collapse ``` para evitar de versiones modernas de Outlook añadan espacios entre la tabla y el border.
 
-En caso de los colores, es preferente utilizar los seis carácteres del código hexagesimal.
+	* En caso de los colores, es preferente utilizar los seis carácteres del código hexagesimal.
 
 	* Cuando se utiliza padding en email, debe especificar cada uno de sus valores, de esta forma 'padding: 10px 3px 10px 4px;' o en su forma larga.
 	* Tener en cuenta que es seguro usar padding en los tag td.
