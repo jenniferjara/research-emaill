@@ -1,7 +1,9 @@
-# La regla de oro en el desarrollo de emails en HTML es: si un atributo de HTML existe úsalo en vez de CSS.
+##La regla de oro en el desarrollo de emails en HTML es: 
+##si un atributo de HTML existe úsalo en vez de CSS.
 
 
-### Metas 
+
+###Metas 
 
 * Código para el navegador a fin que valide el código HTML de archivo.	
 ``` <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ```
@@ -15,53 +17,56 @@
 * Deshabilita el auto-scale en iOS 10 mail. 
 ``` <meta name="x-apple-disable-message-reformatting"> ``` 
 
-### Body y Main Table
+###Body y Main Table
 
-* En el tag Body añadir los estilos padding y magin 0px para evitar espacios inesperados de los browsers.
+* Al tag Body añadir padding y margin de 0px para evitar espacios inesperados de los browsers.
 
-* Usamos un tag Table que actua como el 'body' real del la estructura, se añade los siguientes atributos width de 100% y cellpd y cellsp en 0 para quitar espacios.
-
-* En las tablas se añaden atributos cellpadding = "0" y cellspacing = "0" para quitar los espacios entre las tablas.
-
-* En la tabla un tr es igual a una fila, y un td a una columna.
-
-* En los tags table y td se puede usar el atributo bgcolor (color de fondo).
+* Usamos un tag Table que actua como el 'body' real del la estructura, se añade los siguientes atributos width de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
 
 ### Contenido
 
-#### Tablas 
+* Los elementos tr y td funciones como fila y columna, siempre que se crea una división más usar una table ==> tr ==> td.
 
-* Table: añadir los atributos anteriores y esta vez con un width de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todas las pantallas de pc.
+####Tablas 
 
-* Para las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive; y si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
+* Añadir los atributos anteriores (que la main table) y esta vez con un width de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todas las pantallas de pc.
 
-#### Td
+* En las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive; y si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
 
-* Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
+* Cuando hay elementos de tamaños específicos dentro de una tabla, es mejor poner tamaños de ancho exactos (px).
+
+####Td
 
 * Es seguro usar padding en los tag td, los tags como div o p se comportan de diferente manera.
+
+* Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
 
 * Si hay problemas con el padding (que la plataforma de envio excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia).
 
-* Para centrar el contenido usar el atributo align="center"
+* Para centrar el contenido usar el atributo ``` align="center" ```.
+
+* Para alinear verticalmente el contenido de la celda hacia arriba, usar ``` valing="top" ```.
  
-#### Imagenes
+####Imagenes
 
 * Añadir a las imagenes ``` display: block; ``` que evita que algunos clientes de mail añadan espacios debajo de las imagenes.
 
-* En las imagenes es mejor mantenerlas los mas ligeras posibles, debajo de los 100kb es ideal, pero tambien debajo de los 255kb es lo standard.
+* Mantener el tamaño lo mas ligero posible, el tamaño standard es debajo de 250kb (100kb tamaño ideal).
 
 * Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ```.
 
-#### Random
+####Varios
 
 * Para los colores usar los seis carácteres del código hexagesimal.
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
-  ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ```
+  ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` .
 
-### Según tipos de clientes de mail
+* En los tags table y td se puede usar el atributo bgcolor (color de fondo).
+
+
+##Según tipos de clientes de mail
 
 #### Yahoo
 
