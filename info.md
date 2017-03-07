@@ -17,10 +17,15 @@
 ### Body y Main Table
 
 	* Body: añadir padding y magin 0px para evitar espacios inesperados.
-	* Table: que actua como el 'body' real del la estructura, añadir los siguientes atributos directamente en el html width de 100% , cellpd y cellsp en 0 para quitar espacios
+
+	* Table: que actua como el 'body' real del la estructura, añadir los siguientes atributos directamente en el html, con un width de 100% y cellpd y cellsp en 0 para quitar espacios.
+
 	* En la tabla un tr es igual a una fila, y un td a una columna.
-	* Si se necesita añadir un color de fondo, en este tag es donde se debe colocar.
+
+	* En los tags table y td se puede usar el atributo bgcolor (color de fondo).
+
 	* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios.
+
 	* Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
 
@@ -28,15 +33,17 @@
 
 	* Table: añadir los atributos anteriores y esta vez con un width de 600px y align center, es un ancho seguro para que el mail se muestre en casi todas las pantallas de pc.
 
-	* En las tablas siguientes es de preferencia que el ancho ocupe todo el ancho la tabla principal entonces se usan los porcentajes, ya que asi se adapatará al momento de hacer el email responsive, si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
+	* Para las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive, si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
 
 	* Tambien se añade estilos inline ``` border-collapse: collapse ``` para evitar de versiones modernas de Outlook añadan espacios entre la tabla y el border.
 
 	* En caso de los colores, es preferente utilizar los seis carácteres del código hexagesimal.
 
 	* Cuando se utiliza padding en email, debe especificar cada uno de sus valores, de esta forma 'padding: 10px 3px 10px 4px;' o en su forma larga.
-	* Tener en cuenta que es seguro usar padding en los tag td.
-	* Como en las tablas el margin no funciona, se usa celdas vacias para crear estos margenes.
+
+	* Tener en cuenta que es seguro usar padding en los tag td. 
+
+	* Como en las tablas el margin no funciona, se usa celdas vacias para crear estos margenes: ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ```
 
 	* En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font, va dentro del tag a usando el atributo html 'color' 
 
@@ -45,3 +52,5 @@
 	* Imagenes como link: para quitar el borde azul típico de los links, se añade el atributo ``` border="0" ``` a la imagen y ``` display="block" ``` .
 
 	* En Yahoo mail a los tags ``` center ``` se añade una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda, para corregir se puede poner estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambbien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
+
+	* En las imagenes es mejor mantenerlas los mas ligeras posibles, debajo de los 100kb es ideal y debajo de los 255kb es lo standard
