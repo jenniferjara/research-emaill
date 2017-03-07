@@ -37,16 +37,16 @@
 
 #### Td
 
+* Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
+
 * Es seguro usar padding en los tag td, los tags como div o p se comportan de diferente manera.
 
-* Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
+* Si hay problemas con el padding (que la plataforma de envio excluya los estilos CSS) crear espacios con celdas vacias: 
+  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` .
 
 #### Random
 
 * Para los colores usar los seis carácteres del código hexagesimal.
-
-* Como en las tablas el margin no funciona, se crea celdas vacias para crear estos margenes: 
-  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ```
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ```
