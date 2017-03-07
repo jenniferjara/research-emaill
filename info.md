@@ -1,7 +1,5 @@
 ##La regla de oro en el desarrollo de emails en HTML es: si existe un atributo de HTML, úsalo en vez de CSS.
 
-
-
 ###Metas 
 
 * Código para el navegador a fin que valide el código HTML de archivo.	
