@@ -1,13 +1,27 @@
 ## La regla de oro en el desarrollo de emails en HTML es: si un atributo de HTML existe úsalo en vez de CSS.
 
-1. Body y Main Table
+### Metas 
+
+	``` <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ```
+	Código para el navegador a fin que valide el código HTML de archivo.	
+
+	``` <meta charset="utf-8"> ```
+	Nos da soporte para todos los caracteres Unicode del documento.
+
+	``` <meta http-equiv="X-UA-Compatible" content="IE=edge"> ```
+	Se usa para que Window Phone muestre de forma correcta en la version movil. 
+
+	``` <meta name="x-apple-disable-message-reformatting"> ``` 
+	Deshabilita el auto-scale en iOS 10 mail
+
+### Body y Main Table
 
 	* Body: añadir padding y magin 0px para evitar espacios inesperados.
 	* Table: que actua como el 'body' real del la estructura, añadir los siguientes atributos directamente en el html width de 100% , cellpd y cellsp en 0 para quitar espacios
 	* En la tabla un tr es igual a una fila, y un td a una columna.
 	* Si se necesita añadir un color de fondo, en este tag es donde se debe colocar.
 
-2. Contenido
+### Contenido
 
 	* Table: añadir los atributos anteriores y esta vez con un width de 600px y align center, es un ancho seguro para que el mail se muestre en casi todas las pantallas de pc.
 
