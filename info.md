@@ -12,7 +12,7 @@
 	Se usa para que Window Phone muestre de forma correcta en la version movil. 
 
 	``` <meta name="x-apple-disable-message-reformatting"> ``` 
-	Deshabilita el auto-scale en iOS 10 mail
+	Deshabilita el auto-scale en iOS 10 mail. 
 
 ### Body y Main Table
 
@@ -20,6 +20,9 @@
 	* Table: que actua como el 'body' real del la estructura, añadir los siguientes atributos directamente en el html width de 100% , cellpd y cellsp en 0 para quitar espacios
 	* En la tabla un tr es igual a una fila, y un td a una columna.
 	* Si se necesita añadir un color de fondo, en este tag es donde se debe colocar.
+	* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios.
+	* Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
+
 
 ### Contenido
 
@@ -40,3 +43,5 @@
 	``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ```
 
 	* Imagenes como link: para quitar el borde azul típico de los links, se añade el atributo ``` border="0" ``` a la imagen y ``` display="block" ``` .
+
+	* En Yahoo mail a los tags ``` center ``` se añade una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda, para corregir se puede poner estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambbien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
