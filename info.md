@@ -1,5 +1,4 @@
-##La regla de oro en el desarrollo de emails en HTML es: 
-##si un atributo de HTML existe úsalo en vez de CSS.
+##La regla de oro en el desarrollo de emails en HTML es: si existe un atributo de HTML, úsalo en vez de CSS.
 
 
 
@@ -25,7 +24,7 @@
 
 ### Contenido
 
-* Los elementos tr y td funciones como fila y columna, siempre que se crea una división más usar una table ==> tr ==> td.
+* Los elementos tr y td funciones como fila y columna; si se crea una división más, se anida una nueva tabla: table>tr>td.
 
 ####Tablas 
 
