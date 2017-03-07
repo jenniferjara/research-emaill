@@ -55,6 +55,8 @@
 
 * Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ```.
 
+* Establecer anchos definidos en Html para que Outlook se vean correctamente, y estilos Css para otros clientes más amigables. Y en Css establecer un max-widht de 600px para Windows Phone.
+
 ####Varios
 
 * Para los colores usar los seis carácteres del código hexagesimal.
@@ -71,11 +73,14 @@
 
 * En Yahoo mail a los tags ``` center ``` se añade una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda, para corregir se puede poner estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambbien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
 
+* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome (con mayúscula). 
+
 #### Outlook
 
 * Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
 * Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
+
 
 
 #### Móvil 
