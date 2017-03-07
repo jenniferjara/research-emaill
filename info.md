@@ -37,22 +37,22 @@
 
 ####Td
 
-* Es seguro usar padding en los tag td, los tags como div o p se comportan de diferente manera.
-
-* Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
-
-* Si hay problemas con el padding (que la plataforma de envio excluya los estilos CSS) crear espacios con celdas vacias: 
-  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia).
-
 * Para centrar el contenido usar el atributo ``` align="center" ```.
 
 * Para alinear verticalmente el contenido de la celda hacia arriba, usar ``` valing="top" ```.
  
+* Es seguro usar padding en los tag td, los tags como div o p se comportan de manera inesperada.
+
+* Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
+
+* Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
+  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia).
+
 ####Imagenes
 
-* Añadir a las imagenes ``` display: block; ``` que evita que algunos clientes de mail añadan espacios debajo de las imagenes.
+* Añadir a las imagenes ``` display: block; ``` para evitar que algunos clientes de mail añadan espacios debajo de las imagenes.
 
-* Mantener el tamaño lo mas ligero posible, el tamaño standard es debajo de 250kb (100kb tamaño ideal).
+* Mantener el tamaño lo mas ligero posible, el tamaño standard es debajo de 250kb (100kb es el tamaño ideal).
 
 * Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ```.
 
