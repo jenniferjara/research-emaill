@@ -1,4 +1,4 @@
-## La regla de oro en el desarrollo de emails en HTML es: si un atributo de HTML existe úsalo en vez de CSS.
+# La regla de oro en el desarrollo de emails en HTML es: si un atributo de HTML existe úsalo en vez de CSS.
 
 
 ### Metas 
@@ -42,7 +42,17 @@
 * Es seguro usar padding en los tag td, los tags como div o p se comportan de diferente manera.
 
 * Si hay problemas con el padding (que la plataforma de envio excluya los estilos CSS) crear espacios con celdas vacias: 
-  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` .
+  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia).
+
+* Para centrar el contenido usar el atributo align="center"
+ 
+#### Imagenes
+
+* Añadir a las imagenes ``` display: block; ``` que evita que algunos clientes de mail añadan espacios debajo de las imagenes.
+
+* En las imagenes es mejor mantenerlas los mas ligeras posibles, debajo de los 100kb es ideal, pero tambien debajo de los 255kb es lo standard.
+
+* Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ```.
 
 #### Random
 
@@ -50,13 +60,6 @@
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ```
-
-#### Imagenes
-
-* Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ``` y ``` display="block" ``` .
-
-* En las imagenes es mejor mantenerlas los mas ligeras posibles, debajo de los 100kb es ideal, pero tambien debajo de los 255kb es lo standard.
-
 
 ### Según tipos de clientes de mail
 
@@ -69,6 +72,7 @@
 * Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
 * Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
+
 
 #### Móvil 
 
