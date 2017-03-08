@@ -1,4 +1,4 @@
-##La regla de oro en el desarrollo de emails en HTML es: si existe un atributo de HTML, úsalo en vez de CSS.
+#La regla de oro en el desarrollo de emails en HTML es: si existe un atributo de HTML, úsalo en vez de CSS.
 
 ###Head
 
@@ -158,3 +158,5 @@ Algunos metas que mejoran la vizulización de los mails:
 #### Móvil 
 
 * Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
+
+* Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
