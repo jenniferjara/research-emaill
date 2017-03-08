@@ -123,19 +123,17 @@
 
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
 
-<!-- * Para fondos de imagenes, Outlook solo soporta atributos html más no css. -->
-
 * ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
 
 * Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
 
-``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
+	``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
 
-```	<!--[if mso 14]>Outlook 2010<![endif]--> ```
+	```	<!--[if mso 14]>Outlook 2010<![endif]--> ```
 
-```	<!--[if mso 15]>Outlook 2013<![endif]--> ```
+	```	<!--[if mso 15]>Outlook 2013<![endif]--> ```
 
-```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
+	```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
 
 ####Yahoo
 
