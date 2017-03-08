@@ -148,3 +148,11 @@ Algunos metas que mejoran la vizulización de los mails:
 * Soporta 8,192 caracteres por bloque de estilo, Gmail elimina todo el bloque de estilos si supera el número de caracteres. 
 
 * Gmail no soporta declaraciones como ``` @media , @import y @font-face ```, si encuentra uno elimina todo el bloque de estilos, es mejor mantenerlo separado de estilos importantes.
+
+* Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
+
+* Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
+
+#### Móvil 
+
+* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios.
