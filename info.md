@@ -57,6 +57,10 @@
 
 ####Imagenes
 
+* Normalmente Outlook, Gmail y Yahoo bloquean las imagenes por default, es importante colocar un Alt correcto, para dar referencia al usuario del contenido de la imagen.
+
+* Tambien se puede colocar
+
 * Añadir a las imagenes ``` display: block; ``` para evitar que algunos clientes de mail añadan espacios debajo de las imagenes.
 
 * Mantener el tamaño lo mas ligero posible, el tamaño standard es debajo de 250kb (100kb es el tamaño ideal).
@@ -65,11 +69,17 @@
 
 * En clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables.
 
+####Tipografía
+
+* usar @import en el style del head de html.
+
+* Incluir dentro de ``` <td></td> ``` estilos de font-family, font-size y color para evitar que algunos clientes de mail subcriban los estilos de fuentes.
+
 ####Medias Queries 
 
 * Usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
 
-* Para acceder a una clase dentro del media, usar el formato de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo.
+* Para acceder a una clase dentro del media, usar el método de selección de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo.
 
 [More info](https://litmus.com/blog/understanding-media-queries-in-html-email "More info")
 
