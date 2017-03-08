@@ -4,6 +4,8 @@
 
 ####Metas
 
+Algunos metas que mejoran la vizulización de los mails: 
+
 * Código para el navegador a fin que valide el código HTML de archivo: 
 ``` <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ```
 
@@ -21,29 +23,32 @@
 
 ####Style
 
-* Usar estilos inline o pones los estilos en la etiqueta head con el tag style. 
+* Usar estilos inline y/o pones los estilos en el head (para algunos clientes de mail). 
 
-* Formato de nombre de clases: usar nombre que tengan referencia al elemento; si se usa guión, usar solo uno porque yahoo no es compatible a clases con guion doble. 
+* Formato de nombre de clases: usar nombre que tengan referencia al elemento; si se usa guiones usar uno porque yahoo no es compatible a clases con guion doble.
+
 
 ###Contenido
+
+* Usar al máximo los atributos Html.
 
 ####Body y Main Table
 
 * Al tag Body añadir padding y margin de 0px para evitar espacios inesperados de los browsers.
 
-* Se puede usar un tag center, tener cuidado en la vista para Yahoo ya que le da una clase por default.
+* Se puede usar un tag center (tener cuidado en Yahoo ya que le da una clase por default).
 
-* Usamos un tag Table que actua como el 'body' real del la estructura, se añade los siguientes atributos width de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
+* Usar un tag Table que actua como el 'body' real del la estructura, con un ancho de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
 
 * Los elementos tr y td funciones como fila y columna; si se crea una división más, se anida una nueva tabla: table>tr>td.
 
 ####<table></table> 
 
-* Añadir los atributos anteriores ( ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` ) esta vez con un width de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todas las pantallas de pc.
+* Añadir los atributos anteriores ( ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` ) esta vez con un ancho de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todas las pantallas de pc.
 
 * En las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive; al cambiar el ancho de elemento padre, el resto de tablas se adaptará.
 
-* Cuando hay elementos de tamaños específicos dentro de una tabla, es mejor poner tamaños de ancho exactos (px).
+* Cuando hay elementos de tamaños específicos dentro de una tabla (como imagenes), es mejor poner tamaños exactos (px).
 
 ####<td></td> 
 
@@ -51,12 +56,13 @@
 
 * Para alinear verticalmente el contenido de la celda hacia arriba, usar ``` valing="top" ```. Este es un atributo HTML equivalente a verical-align en CSS.
  
-* Es seguro usar padding en los tag td, los tags como div o p se comportan de manera inesperada.
+* Es seguro utilizar padding en los tag td, los tags como div o p se comportan de manera diferente e inesperada.
 
-* Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
+* Especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
 
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
+
 
 ####Imagenes
 
@@ -68,19 +74,23 @@
 
 * Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ``` .
 
-* Para clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables.
+* Para clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables. 
+
 
 ####Tipografía
 
-* Para enlazar una tipografía usar @import o @font-face en los estilos CSS o enlazar directamente en el head del Html, pero ambas opciones dependen del cliente de mail.
+* Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo :
+   ```
+  <!--[if !mso]><!-- -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!--<![endif]--> 
+   ```
 
 * Incluir dentro de ``` <td></td> ``` estilos de font-family, font-size y color para evitar que algunos clientes de mail subcriban los estilos de fuentes.
 
 ####Medias Queries 
 
 * Usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
-
-* Se puede acceder a 
 
 
 ####Varios
@@ -89,7 +99,7 @@
 
 * En los tags table y td se puede usar el atributo bgcolor (color de fondo).
 
-* Background Image: utlizar el atributo Html Background="url" en el tag td.
+* Background Image: utlizar el atributo Html Background="url".
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` .
@@ -103,7 +113,7 @@
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
-* Evitar el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores.
+* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta los selectores por clases y ID.
 
 ####Outlook
 
@@ -113,11 +123,9 @@
 
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
 
-* Para fondos de imagenes, Outlook solo soporta atributos html más no css.
+<!-- * Para fondos de imagenes, Outlook solo soporta atributos html más no css. -->
 
-####Conditional CSS para Outlook
-
-* Nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook.. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
+* Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
 
 ``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
 
@@ -129,7 +137,7 @@
 
 ####Yahoo
 
-* En Yahoo mail a los tags ``` center ``` se añade una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda, para corregir se puede poner estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambbien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
+* Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
 
 * ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome (Margin con mayúscula). 
 
@@ -137,16 +145,14 @@
 
 * Gmail sólo soporta <style> en el <head>.
 
-* Solo soporta 8,192 caracteres por bloque de estilo, si supera el número Gmail elimina todo el bloque de estilos.
+* Soporta 8,192 caracteres por bloque de estilo, Gmail elimina todo el bloque de estilos si supera el número de caracteres. 
 
-* Gmail no soporta declaraciones de ``` @media , @import , @font-face ```, si encuentra uno elimina todo el bloque de estilos, es mejor mantenerlo separado de los estilos importantes.
+* Gmail no soporta declaraciones como ``` @media , @import y @font-face ```, si encuentra uno elimina todo el bloque de estilos, es mejor mantenerlo separado de estilos importantes. 
 
-* Los estilos importantes para la plantilla y amigables a Gmail, siempre deben ir primero.
+* Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
 
-* Evitar el uso de caracteres como: =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ;  ya que Gmail se volverá loco.
+* Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
 
 #### Móvil 
 
 * Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios.
-
-
