@@ -143,6 +143,8 @@ Algunos metas que mejoran la vizulización de los mails:
 
 ####Gmail 
 
-* Gmail sólo soporta <style> en el <head>. 
+* Gmail sólo soporta ``` <style> ``` en el ``` <head> ``` . 
 
 * Soporta 8,192 caracteres por bloque de estilo, Gmail elimina todo el bloque de estilos si supera el número de caracteres. 
+
+* Gmail no soporta declaraciones como ``` @media , @import y @font-face ```, si encuentra uno elimina todo el bloque de estilos, es mejor mantenerlo separado de estilos importantes.
