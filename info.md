@@ -84,9 +84,9 @@ Algunos metas que mejoran la vizulización de los mails:
   <!--[if !mso]><!-- -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!--<![endif]--> 
-   ``` .
+   ``` 
 
-* El método ``` <link> ``` compatible entre la mayoria de clientes de correo electrónico.
+* El método ``` <link> ``` es compatible entre la mayoria de clientes de correo electrónico.
 
 * Incluir dentro de ``` <td></td> ``` estilos de font-family, font-size y color para evitar que algunos clientes de mail subcriban los estilos de fuentes.
 
