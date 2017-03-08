@@ -4,26 +4,28 @@
 
 ####Metas
 
-* Código para el navegador a fin que valide el código HTML de archivo.	
+* Código para el navegador a fin que valide el código HTML de archivo: 
 ``` <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ```
 
-* Brinda soporte para los caracteres Unicode del documento.
+* Brinda soporte para los caracteres Unicode del documento:
 ``` <meta charset="utf-8"> ```
 
-* Control en la versión móvil 
+* Control en la versión móvil: 
 ``` <meta name="viewport" content="width=device-width"> ```
 
-* Se usa para que Window Phone muestre de forma correcta en la version movil. 
+* Se usa para que Window Phone muestre de forma correcta en la version movil: 
 ``` <meta http-equiv="X-UA-Compatible" content="IE=edge"> ```
 
-* Deshabilita el auto-scale en iOS 10 mail. 
+* Deshabilita el auto-scale en iOS 10 mail: 
 ``` <meta name="x-apple-disable-message-reformatting"> ``` 
+
+####Style
+
+* Usar estilos inline o pones los estilos en la etiqueta head con el tag style.
 
 ###Contenido
 
 ####Body y Main Table
-
-* Usar estilos inline o pones los estilos en la etiqueta head con el tag style.
 
 * Al tag Body añadir padding y margin de 0px para evitar espacios inesperados de los browsers.
 
@@ -64,7 +66,7 @@
 
 * Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ``` .
 
-* En clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables.
+* Para clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables.
 
 ####Tipografía
 
@@ -96,6 +98,8 @@
 
 ##Según tipos de clientes de mail
 
+* La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos.
+
 ####Outlook
 
 * Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
@@ -125,9 +129,9 @@
 ####Gmail 
 
 * Gmail sólo soporta <style> en el <head>.
-* Gmail no soporta declaraciones con @ ``` @media , @import , @font-face ```, si encuentra uno elimina todo el bloque de estilos. Al varios bloques de estilos y ubicar los estilos que son seguros para Gmail al inicio evita este problema.
+* Gmail no soporta declaraciones con @ ``` @media , @import , @font-face ```, si encuentra uno elimina todo el bloque de estilos. Al usar varios bloques de estilos y ubicar los estilos que son seguros para Gmail al inicio evita este problema. 
 
-* 
+* Solo soporta 8,192 caracteres por bloque de estilo, si supera el número Gmail elimina todo el bloque de estilos.
 
 #### Móvil 
 
