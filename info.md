@@ -8,6 +8,9 @@
 * Brinda soporte para los caracteres Unicode del documento.
 ``` <meta charset="utf-8"> ```
 
+* Control en la versión móvil 
+``` <meta name="viewport" content="width=device-width"> ```
+
 * Se usa para que Window Phone muestre de forma correcta en la version movil. 
 ``` <meta http-equiv="X-UA-Compatible" content="IE=edge"> ```
 
@@ -16,9 +19,14 @@
 
 ###Body y Main Table
 
+* Usar estilos inline o pones los estilos en la etiqueta head con el tag style.
+
 * Al tag Body añadir padding y margin de 0px para evitar espacios inesperados de los browsers.
 
+* Se puede usar un tag center, tener cuidado en la vista para Yahoo ya que le da una clase por default.
+
 * Usamos un tag Table que actua como el 'body' real del la estructura, se añade los siguientes atributos width de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
+
 
 ###Contenido
 
@@ -43,7 +51,9 @@
 * Se debe especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
 
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
-  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia).
+  ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
+
+* Usar estilos de font
 
 ####Imagenes
 
@@ -57,7 +67,7 @@
 
 ####Varios
 
-* Para los colores usar los seis carácteres del código hexagesimal.
+* Para los colores usar los seis carácteres del código hexagesimal. ex: #fffffff.
 
 * En los tags table y td se puede usar el atributo bgcolor (color de fondo).
 
@@ -81,9 +91,14 @@
 
 * Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
 
+* Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
 
 
 #### Móvil 
 
 * Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios.
+
+####Conditional target
+
+* Estos son usados en las versione de Outlook más antiguas, solo seran leidos por esas versiones y van en comentarios dentro del Html. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info").
 
