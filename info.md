@@ -21,7 +21,9 @@
 
 ####Style
 
-* Usar estilos inline o pones los estilos en la etiqueta head con el tag style.
+* Usar estilos inline o pones los estilos en la etiqueta head con el tag style. 
+
+* Formato de nombre de clases: usar nombre que tengan referencia al elemento; si se usa guión, usar solo uno porque yahoo no es compatible a clases con guion doble. 
 
 ###Contenido
 
@@ -78,7 +80,7 @@
 
 * Usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
 
-<!-- * Para acceder a una clase dentro del media, usar el método de selección de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo. [More info](https://litmus.com/blog/understanding-media-queries-in-html-email "More info") -->
+* Se puede acceder a 
 
 
 ####Varios
@@ -96,9 +98,12 @@
 
 * Colocar un href válido en los enlaces (para no tener errores en las pruebas de envio).
 
+
 ##Según tipos de clientes de mail
 
-* La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos.
+* La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
+
+* Evitar el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores.
 
 ####Outlook
 
@@ -107,6 +112,8 @@
 * Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
 
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
+
+* Para fondos de imagenes, Outlook solo soporta atributos html más no css.
 
 ####Conditional CSS para Outlook
 
@@ -129,9 +136,14 @@
 ####Gmail 
 
 * Gmail sólo soporta <style> en el <head>.
-* Gmail no soporta declaraciones con @ ``` @media , @import , @font-face ```, si encuentra uno elimina todo el bloque de estilos. Al usar varios bloques de estilos y ubicar los estilos que son seguros para Gmail al inicio evita este problema. 
 
 * Solo soporta 8,192 caracteres por bloque de estilo, si supera el número Gmail elimina todo el bloque de estilos.
+
+* Gmail no soporta declaraciones de ``` @media , @import , @font-face ```, si encuentra uno elimina todo el bloque de estilos, es mejor mantenerlo separado de los estilos importantes.
+
+* Los estilos importantes para la plantilla y amigables a Gmail, siempre deben ir primero.
+
+* Evitar el uso de caracteres como: =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ;  ya que Gmail se volverá loco.
 
 #### Móvil 
 
