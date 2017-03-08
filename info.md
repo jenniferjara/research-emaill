@@ -4,8 +4,6 @@
 
 ####Metas
 
-Algunos metas que mejoran la vizulización de los mails: 
-
 * Código para el navegador a fin que valide el código HTML de archivo: 
 ``` <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ```
 
@@ -23,9 +21,9 @@ Algunos metas que mejoran la vizulización de los mails:
 
 ####Style
 
-* Usar estilos inline y/o pones los estilos en el head (para algunos clientes de mail). 
+* Usar estilos inline y/o pones los estilos en el head (algunos clientes de mail reconocen al style en el head y otros no, asi que los estilos inline nos ayudan en esos casos). 
 
-* Formato de nombre de clases: usar nombre que tengan referencia al elemento; si se usa guiones usar uno porque yahoo no es compatible a clases con guion doble.
+* Formato de nombre de clases: nombre que tengan referencia al elemento; si se usa guiones usar uno porque yahoo no es compatible a clases con guion doble.
 
 
 ###Contenido
@@ -126,6 +124,8 @@ Algunos metas que mejoran la vizulización de los mails:
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
 
 <!-- * Para fondos de imagenes, Outlook solo soporta atributos html más no css. -->
+
+* ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
 
 * Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
 
