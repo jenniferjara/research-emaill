@@ -1,6 +1,8 @@
 ##La regla de oro en el desarrollo de emails en HTML es: si existe un atributo de HTML, úsalo en vez de CSS.
 
-###Metas 
+###Head
+
+####Metas
 
 * Código para el navegador a fin que valide el código HTML de archivo.	
 ``` <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ```
@@ -36,7 +38,7 @@
 
 * Añadir los atributos anteriores ( ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` ) esta vez con un width de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todas las pantallas de pc.
 
-* En las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive; y si se desea cambiar el ancho solo se cambiará el ancho de elemento padre.
+* En las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive; al cambiar el ancho de elemento padre, el resto de tablas se adaptará.
 
 * Cuando hay elementos de tamaños específicos dentro de una tabla, es mejor poner tamaños de ancho exactos (px).
 
@@ -53,8 +55,6 @@
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
 
-* Usar estilos de font
-
 ####Imagenes
 
 * Añadir a las imagenes ``` display: block; ``` para evitar que algunos clientes de mail añadan espacios debajo de las imagenes.
@@ -63,7 +63,16 @@
 
 * Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ``` .
 
-* Establecer anchos definidos en Html para que en Outlook se vean correctamente, y estilos Css para otros clientes más amigables. En CSS establecer un max-widht de 600px para Windows Phone.
+* En clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables.
+
+####Medias Queries 
+
+* Usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
+
+* Para acceder a una clase dentro del media, usar el formato de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo.
+
+[More info](https://litmus.com/blog/understanding-media-queries-in-html-email "More info")
+
 
 ####Varios
 
@@ -75,6 +84,8 @@
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` .
+
+* Border-radius: funcionan en la etiqueta td.
 
 
 ##Según tipos de clientes de mail
@@ -100,5 +111,5 @@
 
 ####Conditional target
 
-* Estos son usados en las versione de Outlook más antiguas, solo seran leidos por esas versiones y van en comentarios dentro del Html. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info").
+* Estos son usados en las versiones de Outlook más antiguas, sólo seran leidos por esas versiones y van en comentarios dentro del Html. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info").
 
