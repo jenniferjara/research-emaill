@@ -59,8 +59,6 @@
 
 * Normalmente Outlook, Gmail y Yahoo bloquean las imagenes por default, es importante colocar un Alt correcto, para dar referencia al usuario del contenido de la imagen.
 
-* Tambien se puede colocar
-
 * Añadir a las imagenes ``` display: block; ``` para evitar que algunos clientes de mail añadan espacios debajo de las imagenes.
 
 * Mantener el tamaño lo mas ligero posible, el tamaño standard es debajo de 250kb (100kb es el tamaño ideal).
@@ -71,7 +69,7 @@
 
 ####Tipografía
 
-* usar @import en el style del head de html.
+* Para enlazar una tipografía usar @import o @font-face en los estilos CSS o enlazar directamente en el head del Html, pero ambas opciones dependen del cliente de mail.
 
 * Incluir dentro de ``` <td></td> ``` estilos de font-family, font-size y color para evitar que algunos clientes de mail subcriban los estilos de fuentes.
 
@@ -79,9 +77,7 @@
 
 * Usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
 
-* Para acceder a una clase dentro del media, usar el método de selección de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo.
-
-[More info](https://litmus.com/blog/understanding-media-queries-in-html-email "More info")
+* Para acceder a una clase dentro del media, usar el método de selección de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo. [More info](https://litmus.com/blog/understanding-media-queries-in-html-email "More info")
 
 
 ####Varios
@@ -95,7 +91,7 @@
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` .
 
-* Border-radius: funcionan en la etiqueta td.
+* Border-radius: en 
 
 
 ##Según tipos de clientes de mail
@@ -114,12 +110,16 @@
 
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
 
+####Conditional CSS para Outlook
+
+* Nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook.. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
+``` <!--[if mso 12]>Outlook 2007<![endif]-->
+	<!--[if mso 14]>Outlook 2010<![endif]-->
+	<!--[if mso 15]>Outlook 2013<![endif]-->
+	<!--[if mso 16]>Outlook 2016<![endif]--> ```
 
 #### Móvil 
 
 * Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios.
 
-####Conditional target
-
-* Estos son usados en las versiones de Outlook más antiguas, sólo seran leidos por esas versiones y van en comentarios dentro del Html. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info").
 
