@@ -19,7 +19,9 @@
 * Deshabilita el auto-scale en iOS 10 mail. 
 ``` <meta name="x-apple-disable-message-reformatting"> ``` 
 
-###Body y Main Table
+###Contenido
+
+####Body y Main Table
 
 * Usar estilos inline o pones los estilos en la etiqueta head con el tag style.
 
@@ -28,9 +30,6 @@
 * Se puede usar un tag center, tener cuidado en la vista para Yahoo ya que le da una clase por default.
 
 * Usamos un tag Table que actua como el 'body' real del la estructura, se añade los siguientes atributos width de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
-
-
-###Contenido
 
 * Los elementos tr y td funciones como fila y columna; si se crea una división más, se anida una nueva tabla: table>tr>td.
 
@@ -77,7 +76,7 @@
 
 * Usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
 
-* Para acceder a una clase dentro del media, usar el método de selección de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo. [More info](https://litmus.com/blog/understanding-media-queries-in-html-email "More info")
+<!-- * Para acceder a una clase dentro del media, usar el método de selección de atributos ``` table [class=table]{...} ``` , esto funciona para clientes como Yahoo. [More info](https://litmus.com/blog/understanding-media-queries-in-html-email "More info") -->
 
 
 ####Varios
@@ -91,16 +90,11 @@
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` .
 
-* Border-radius: en 
+* Border-radius: para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que contine el enlace: ``` <a href="#"></a> ``` .
 
+* Colocar un href válido en los enlaces (para no tener errores en las pruebas de envio).
 
 ##Según tipos de clientes de mail
-
-####Yahoo
-
-* En Yahoo mail a los tags ``` center ``` se añade una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda, para corregir se puede poner estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambbien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
-
-* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome (Margin con mayúscula). 
 
 ####Outlook
 
@@ -122,6 +116,18 @@
 
 ```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
 
+####Yahoo
+
+* En Yahoo mail a los tags ``` center ``` se añade una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda, para corregir se puede poner estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambbien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
+
+* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome (Margin con mayúscula). 
+
+####Gmail 
+
+* Gmail sólo soporta <style> en el <head>.
+* Gmail no soporta declaraciones con @ ``` @media , @import , @font-face ```, si encuentra uno elimina todo el bloque de estilos. Al varios bloques de estilos y ubicar los estilos que son seguros para Gmail al inicio evita este problema.
+
+* 
 
 #### Móvil 
 
