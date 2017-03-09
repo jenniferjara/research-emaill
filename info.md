@@ -10,13 +10,16 @@
 * [Tipografía](#Tipografía) 
 * [Varios](#Varios) 
 * [Clientes de servicio de mail](#Según tipos de clientes de mail)
+* [Referencias](#Referencias)
 
 * * *
 
 ####Metas
 
 * Código para el navegador a fin que valide el código HTML de archivo: 
-``` <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> ```
+``` html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+```
 
 * Brinda soporte para los caracteres Unicode del documento:
 ``` <meta charset="utf-8"> ```
