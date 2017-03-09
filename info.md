@@ -22,16 +22,24 @@
 ```
 
 * Brinda soporte para los caracteres Unicode del documento:
-``` <meta charset="utf-8"> ```
-
-* Control en la versión móvil: 
-``` <meta name="viewport" content="width=device-width"> ```
+``` html 
+<meta charset="utf-8"> 
+```
 
 * Se usa para que Window Phone muestre de forma correcta en la version movil: 
-``` <meta http-equiv="X-UA-Compatible" content="IE=edge"> ```
+``` html 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+```
 
 * Deshabilita el auto-scale en iOS 10 mail: 
-``` <meta name="x-apple-disable-message-reformatting"> ``` 
+``` html 
+<meta name="x-apple-disable-message-reformatting"> 
+```
+
+* Control en la versión móvil: 
+``` html 
+<meta name="viewport" content="width=device-width"> 
+```
 
 ####Style
 
@@ -91,7 +99,7 @@
 
 * Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo: 
 
-   ```
+   ``` html
   <!--[if mso]><!-- -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!--<![endif]--> 
