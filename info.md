@@ -3,9 +3,15 @@
 ## Índice 
 * [Metas](#Metas) 
 * [Style](#Style) 
-* [Contenido](#Contenido)
-  * [Body y Table Main](#Body y Main Table) 
-  * [Tablas](#<table></table>)
+* [Body y Table Main](#Body y Main Table) 
+* [Tablas](#<table></table>)
+* [Td](#<td></td>)
+* [Imagenes](#Imagenes) 
+* [Tipografía](#Tipografía) 
+* [Varios](#Varios) 
+* [Clientes de servicio de mail](#Según tipos de clientes de mail)
+
+* * *
 
 ###Head
 
@@ -96,12 +102,10 @@
 
 * Incluir dentro de ``` <td></td> ``` estilos de font-family, font-size y color para evitar que algunos clientes de mail subcriban los estilos de fuentes.
 
-####Medias Queries 
-
-* Usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
-
 
 ####Varios
+
+* En las Media Queries usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
 
 * Para los colores usar los seis carácteres del código hexagesimal. ex: #fffffff.
 
