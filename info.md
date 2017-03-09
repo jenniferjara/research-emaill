@@ -77,7 +77,8 @@
 
 ####Tipografía
 
-* Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo :
+* Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo: 
+
    ```
   <!--[if !mso]><!-- -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -145,13 +146,16 @@
 
 * Gmail sólo soporta ``` <style> ``` en el ``` <head> ``` . 
 
-* Soporta 8,192 caracteres por bloque de estilo, Gmail elimina todo el bloque de estilos si supera el número de caracteres. 
+* Soporta hasta cierta cantidad de carácteres por bloque de estilos, al superar ese número Gmail elimina ese bloque. 
 
 * Gmail no soporta declaraciones como ``` @media , @import y @font-face ```, si encuentra uno elimina todo el bloque de estilos, es mejor mantenerlo separado de estilos importantes.
 
 * Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
 
 * Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
+
+* [Más info](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "Más info")
+
 
 #### Móvil 
 
