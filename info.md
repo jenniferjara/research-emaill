@@ -7,7 +7,7 @@
 * [Tablas](#<table></table>)
 * [Td](#<td></td>)
 * [Imagenes](#Imagenes) 
-* [Tipografía](#Tipografía) 
+
 * [Varios](#Varios) 
 * [Clientes de servicio de mail](#Según tipos de clientes de mail)
 * [Referencias](#Referencias)
@@ -86,6 +86,8 @@
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
 
+* Incluir dentro de ``` <td></td> ``` estilos para las letras (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes.
+
 
 ####Imagenes
 
@@ -100,15 +102,15 @@
 * Para clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables. 
 
 
-####Tipografía
+<!-- ####Tipografía -->
 
-* El método ``` <link> ``` es compatible entre la mayoria de clientes de correo electrónico.
+<!-- * El método ``` <link> ``` es compatible entre la mayoria de clientes de correo electrónico.
    ``` html
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
    ``` 
 * Para Outlook usar las condicionales, si es necesario. 
+ -->
 
-* Incluir dentro de ``` <td></td> ``` estilos para las letras (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes.
 
 
 ####Varios
