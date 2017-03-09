@@ -26,17 +26,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 ```
 
-* Permite una vista responsive en Windows Phone: 
-``` html 
-<!--[if !mso]><!-- -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!--<![endif]--> 
-```
-
-* Control en las vistas móvil(aunque no estamos seguros que funcione del todo bien, pero...) 
+* Control en las vistas móvil (aunque no estamos seguros que funcione del todo bien, pero...) 
 ``` html 
 <meta name="viewport" content="width=device-width"> 
 ```
+
+* Permite una vista responsive en Windows Phone: 
+``` html 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+``` 
+
+* Evita que los números telefonicos aparezcan como link (cambiar a ``` telephone=yes ``` para que se vean como links)
+``` html
+<meta name="format-detection" content="telephone=no">
+``` 
 
 * Deshabilita el auto-scale en iOS 10 mail: 
 ``` html 
