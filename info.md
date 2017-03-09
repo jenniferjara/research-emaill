@@ -172,4 +172,5 @@
 
 ###Referencias 
 
-[HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
+* [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
+* [Dvelopment HTML email in Gmail ](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
