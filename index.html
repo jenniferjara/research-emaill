@@ -2,13 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="x-apple-disable-message-reformatting">
 	<meta name="format-detection" content="telephone=no">
-	<!--[if !mso] -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!--<![endif]--> 
+  <link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<title>Document</title>
 	<style>
 		*{
@@ -17,8 +15,10 @@
 			-webkit-text-size-adjust: 100%;
 		}
 		body{
-			padding: 0;
-			margin: 0;
+			padding: 0px !important;
+			margin: 0px !important;
+			height: 100vh !important;
+			width: 100vw !important;
 		}
 		table, td{
 			mso-table-lspace: 0pt;
@@ -28,15 +28,18 @@
 			border-collapse: collapse;
 		}
 		td{
-			font-family: 'Open Sans';
+			font-family: Roboto !important;
+		}
+		img{
+			display: block !important;
 		}
 		.back{
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 		.btn-text{
-			color: #ffffff; 
-			text-decoration: none; 
+			color: #ffffff !important; 
+			text-decoration: none !important; 
 			cursor: pointer; 
 			font-size: 14px; 
 			font-weight: bold; 
@@ -44,10 +47,22 @@
 		}
 	</style>
 	<style>
-		@import url(http://fonts.googleapis.com/css?family=Roboto:300);
 		@media screen and (max-width: 480px){
 			.home {
 				width: 100% !important;
+				margin: 0 auto !important;
+			}
+			.home-sect{
+				display: block !important;
+				width: 100% !important;
+				max-width: 100% !important;
+				direction: ltr !important;
+			}
+		}
+
+		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) { /* iPhone 6 and 6+ */
+			.home {
+			min-width: 375px !important;
 			}
 		}
 	</style>
@@ -57,21 +72,19 @@
 		<table width="100%" cellpadding="0" cellspacing="0" border="0">
 			<tr>
 				<td align="center" valign="top">
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="600"" class="home">
+					<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="home">
 						<tr>
 							<td align="center" valign="top">
 								<!-- <img src="http://i.imgur.com/5zo9kHA.png" alt="Hero" style="display: block;" width="100%"/> -->
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" background="http://i.imgur.com/5zo9kHA.png" class="back">
 									<tr>
-										<td align="center" valign="top" style="padding: 40px 0 30px 0;color: #ffffff;">
-											<h1>title</h1>
-										</td>
+										<td align="center" valign="top" style="padding: 40px 0 30px 0;color: #ffffff;text-transform: uppercase;font-family: Roboto;"><h1>title</h1>										</td>
 									</tr>
 									<tr>
 										<td align="center" valign="top" style="padding: 40px 0 30px 0;">
-											<table border="0" cellspacing="0" cellpadding="10" style="border:2px solid #FFFFFF;">
+											<table border="0" cellspacing="0" cellpadding="0" style="border:2px solid #FFFFFF;">
 												<tr>
-													<td align="center" style="color:#FFFFFF; font-size:16px;"><font face="Roboto, Arial, sans-serif"><a href="##" style="color:#FFFFFF; text-decoration:none;">FIND OUT MORE</a></font></td>
+													<td align="center" style="color:#FFFFFF; font-size:16px; padding: 10px;font-family: 'Roboto';"><a href="http://www.google.com" style="color:#FFFFFF; text-decoration:none;">FIND OUT MORE</a></td>
 												</tr>
 											</table>
 										</td>
@@ -81,46 +94,29 @@
 						</tr>
 						<tr>
 							<td bgcolor="#fafafa" style="padding: 40px 30px 40px 30px;">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%"">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
-										<td>
-											Lorem ipsum dolor sit amet,
-										</td>
-									</tr>
-									<tr>
-										<td style="padding: 20px 0 20px 0;">
-											Consectetur adipisicing elit. Officiis expedita iste earum laudantium, harum atque dolorem autem esse dolorum similique aspernatur consequuntur excepturi quasi praesentium reprehenderit cupiditate id necessitatibus, ut.
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<table border="0" cellpadding="0" cellspacing="0" width="100%"">
+										<td class="home-sect">
+											<table cellpadding="0" cellspacing="0" width="100%">
 												<tr>
-													<td width="260" valign="top">
-														<table cellpadding="0" cellspacing="0" width="100%">
-															<tr>
-																<td align="center" valign="top" style="padding: 20px 10px 20px 010px;">
-																	<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_02_294x27554f66a.png" width="100%" height="140" alt="banner" />
-																</td>
-															</tr>
-															<tr>
-																<td align="center" valign="top" style="padding: 20px 0 20px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quaerat soluta, rem explicabo beatae libero quo nihil tempore laboriosam. Aliquam officiis quidem reiciendis mollitia. Earum, minima consequatur quod enim repellendus.</td>
-															</tr>
-														</table>
+													<td align="center" valign="top" style="padding: 20px 10px 20px 010px;">
+														<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_02_294x27554f66a.png" width="240" height="140" alt="banner" />
 													</td>
-													<!-- <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td> -->
-													<td width="260" valign="top">
-														<table cellpadding="0" cellspacing="0" width="100%">
-															<tr>
-																<td align="center" valign="top" style="padding: 20px 10px 20px 010px;">
-																	<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_02_294x27554f66a.png" alt="banner" width="100%" height="140" />
-																</td>
-															</tr>
-															<tr>
-																<td align="center" valign="top" style="padding: 20px 0 20px 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At culpa, quaerat, similique hic consectetur facere fugiat quod magni voluptate officia quos! Sequi magni temporibus, provident modi aperiam deleniti aspernatur aliquam?</td>
-															</tr>
-														</table>
+												</tr>
+												<tr>
+													<td align="left" valign="top" style="padding: 20px 0 20px 0;font-family: Roboto;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum quaerat soluta, rem explicabo beatae libero quo nihil tempore laboriosam. Aliquam officiis quidem reiciendis mollitia. Earum, minima consequatur quod enim repellendus.</td>
+												</tr>
+											</table>
+										</td>
+										<td class="home-sect">
+											<table cellpadding="0" cellspacing="0" width="100%" class="home-sect">
+												<tr>
+													<td align="center" valign="top" style="padding: 20px 10px 20px 010px;">
+														<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_02_294x27554f66a.png" alt="banner" width="240" height="140" />
 													</td>
+												</tr>
+												<tr>
+													<td align="left" valign="top" style="padding: 20px 0 20px 0; font-family: 'Roboto'">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At culpa, quaerat, similique hic consectetur facere fugiat quod magni voluptate officia quos! Sequi magni temporibus, provident modi aperiam deleniti aspernatur aliquam?</td>
 												</tr>
 											</table>
 										</td>
@@ -129,23 +125,31 @@
 							</td>
 						</tr>
 						<tr>
-							<td bgcolor="ee4c50" style="padding: 30px;">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<td bgcolor="ee4c50" style="padding: 30px 0px;">
+								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
-										<td align="center">
-										<table border="0" cellspacing="0" cellpadding="0" width="400">
-											<tr>
-												<td>
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, delectus saepe perspiciatis error voluptates repellendus sint tempore repudiandae.
-												</td>
-											</tr>
-										</table>
-										</td>
-										<td align="center">
-											<table border="0" cellspacing="0" cellpadding="0" width="200">
+										<td class="home-sect" align="center">
+											<table border="0" cellspacing="0" cellpadding="0">
 												<tr>
-													<td align="center" valign="top" style="border-radius: 5px; text-align: center; background: #1271db; padding: 20px;">
-														<a href="http://www.google.com" href="_blank" class="btn-text" >Click Here</a>
+													<td align="center" valign="top" style="font-family: 'Roboto';padding: 15px;color: #FFFFFF;">
+														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, delectus saepe perspiciatis error voluptates repellendus sint tempore repudiandae.
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="home-sect" align="center">
+											<table border="0" cellpadding="0" cellspacing="0" width="100%">
+												<tr>
+													<td align="center" style="padding: 10px 0 10px 0;">
+														<table border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td align="center" valign="top" style="border-radius: 6px; text-align: center; background: #1271db;padding: 20px;">
+																	<a href="http://www.google.com" href="_blank" class="btn-text" >Click Here</a>
+																</td>
+															</tr>
+														</table>
 													</td>
 												</tr>
 											</table>

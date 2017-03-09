@@ -48,7 +48,7 @@
 
 ####Style
 
-* Usar estilos inline y/o pones los estilos en el head (algunos clientes de mail reconocen al style en el head y otros no, asi que los estilos inline nos ayudan en esos casos). 
+* Usar estilos inline en cada elemento y/o los estilos en el head (algunos clientes de mail reconocen al style en el head y otros no, asi que los estilos inline nos ayudan en esos casos). 
 
 * Formato de nombre de clases: nombre que tengan referencia al elemento; si se usa guiones usar uno porque yahoo no es compatible a clases con guion doble.
 
@@ -102,22 +102,18 @@
 
 ####Tipografía
 
-* Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo: 
-
-   ``` html
-  <!--[if !mso]> -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!--<![endif]--> 
-   ``` 
-
 * El método ``` <link> ``` es compatible entre la mayoria de clientes de correo electrónico.
+   ``` html
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+   ``` 
+* Para Outlook usar las condicionales, si es necesario. 
 
-* Incluir dentro de ``` <td></td> ``` estilos de font-family, font-size y color para evitar que algunos clientes de mail subcriban los estilos de fuentes.
+* Incluir dentro de ``` <td></td> ``` estilos para las letras (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes.
 
 
 ####Varios
 
-* En las Media Queries usar important! en los estilos para que puedan reemplazar a los estilos inline del Html.
+* En las Media Queries usar !important para que puedan reemplazar a los estilos inline del Html.
 
 * Para los colores usar los seis carácteres del código hexagesimal. ex: #fffffff.
 
@@ -126,7 +122,7 @@
 * Background Image: utlizar el atributo Html Background="url".
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
-  ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` .
+  ```html <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` . 
 
 * Border-radius: para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que contine el enlace: ``` <a href="#"></a> ``` .
 
@@ -195,3 +191,5 @@
 ###Info adicional
 
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
+
+* [Tipografía](https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/ "")
