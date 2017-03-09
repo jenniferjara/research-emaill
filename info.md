@@ -6,7 +6,8 @@
 * [Body y Table Main](#Body y Main Table) 
 * [Tablas](#<table></table>)
 * [Td](#<td></td>)
-* [Imagenes](#Imagenes) 
+* [Imagenes](#Imagenes)
+* [Tipografía](#Tipografia) 
 * [Varios](#Varios) 
 * [Clientes de servicio de mail](#Según tipos de clientes de mail)
 * [Referencias](#Referencias)
@@ -100,6 +101,11 @@
 
 * Para clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables. 
 
+####Tipografias
+
+* Fuentes como Arial, Verdana, Georgia, Times New Roman, y Courier son confiables y soportadas por la mayoria de los servicios de mail. 
+  [Más info](https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/ "")
+
 
 ####Varios
 
@@ -183,5 +189,3 @@
 ###Info adicional
 
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
-
-* [Tipografía](https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/ "")
