@@ -105,7 +105,7 @@
 * Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo: 
 
    ``` html
-  <!--[if !mso]><!-- -->
+  <!--[if !mso]> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!--<![endif]--> 
    ``` 
