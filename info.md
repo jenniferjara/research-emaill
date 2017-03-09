@@ -101,17 +101,6 @@
 * Para clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables. 
 
 
-<!-- ####Tipografía -->
-
-<!-- * El método ``` <link> ``` es compatible entre la mayoria de clientes de correo electrónico.
-   ``` html
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-   ``` 
-* Para Outlook usar las condicionales, si es necesario. 
- -->
-
-
-
 ####Varios
 
 * En las Media Queries usar !important para que puedan reemplazar a los estilos inline del Html.
