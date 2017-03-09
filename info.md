@@ -13,8 +13,6 @@
 
 * * *
 
-###Head
-
 ####Metas
 
 * Código para el navegador a fin que valide el código HTML de archivo: 
@@ -39,11 +37,9 @@
 * Formato de nombre de clases: nombre que tengan referencia al elemento; si se usa guiones usar uno porque yahoo no es compatible a clases con guion doble.
 
 
-###Contenido
+####Body y Main Table
 
 * Usar al máximo los atributos Html.
-
-####Body y Main Table
 
 * Al tag Body añadir padding y margin de 0px para evitar espacios inesperados de los browsers.
 
@@ -93,7 +89,7 @@
 * Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo: 
 
    ```
-  <!--[if !mso]><!-- -->
+  <!--[if mso]><!-- -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!--<![endif]--> 
    ``` 
@@ -173,3 +169,7 @@
 * Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
 
 * Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
+
+###Referencias 
+
+[HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
