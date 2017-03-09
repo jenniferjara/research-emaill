@@ -122,9 +122,11 @@
 * Background Image: utlizar el atributo Html Background="url".
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
-  ```html <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` . 
+  ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` . 
 
-* Border-radius: para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que contine el enlace: ``` <a href="#"></a> ``` .
+* Para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que contine el enlace: ``` <a href="#"></a> ``` .
+
+* Para aumentar el padding del boton hay dos maneras: aumentar el td que contiene al link o en el mismo link cambiando el display a inline-block.
 
 * Colocar un href válido en los enlaces (para no tener errores en las pruebas de envio).
 
