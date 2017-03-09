@@ -7,7 +7,6 @@
 * [Tablas](#<table></table>)
 * [Td](#<td></td>)
 * [Imagenes](#Imagenes) 
-
 * [Varios](#Varios) 
 * [Clientes de servicio de mail](#Según tipos de clientes de mail)
 * [Referencias](#Referencias)
