@@ -23,22 +23,24 @@
 
 * Brinda soporte para los caracteres Unicode del documento:
 ``` html 
-<meta charset="utf-8"> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 ```
 
-* Se usa para que Window Phone muestre de forma correcta en la version movil: 
+* Permite una vista responsive en Windows Phone: 
 ``` html 
-<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<!--[if !mso]><!-- -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif]--> 
+```
+
+* Control en las vistas móvil(aunque no estamos seguros que funcione del todo bien, pero...) 
+``` html 
+<meta name="viewport" content="width=device-width"> 
 ```
 
 * Deshabilita el auto-scale en iOS 10 mail: 
 ``` html 
 <meta name="x-apple-disable-message-reformatting"> 
-```
-
-* Control en la versión móvil: 
-``` html 
-<meta name="viewport" content="width=device-width"> 
 ```
 
 ####Style
@@ -100,7 +102,7 @@
 * Añadir fonts con la etiqueta link, para que Outlook usar las condicionales. Ejemplo: 
 
    ``` html
-  <!--[if mso]><!-- -->
+  <!--[if !mso]><!-- -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!--<![endif]--> 
    ``` 
@@ -158,7 +160,7 @@
 
 * Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
 
-* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome (Margin con mayúscula). 
+* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome. 
 
 ####Gmail 
 
@@ -186,3 +188,5 @@
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [HTML email in Gmail ](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
+
+*[Meta Tag en los emails](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
