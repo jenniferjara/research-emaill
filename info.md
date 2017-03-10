@@ -79,7 +79,7 @@
 
 * Para alinear verticalmente el contenido de la celda hacia arriba, usar ``` valing="top" ```. Este es un atributo HTML equivalente a verical-align en CSS.
  
-* Es seguro utilizar padding en los tag td, los tags como div o p se comportan de manera diferente e inesperada.
+* Es seguro utilizar padding en los tag td, los tags como div o p se comportan de manera diferente e inesperada, ademas que Outlook no lo reconoce en estos elementos.
 
 * Especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
 
@@ -177,6 +177,8 @@
 * Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
 
 * Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
+
+* * *
 
 ###Referencias 
 
