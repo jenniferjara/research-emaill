@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="x-apple-disable-message-reformatting">
 	<meta name="format-detection" content="telephone=no">
-	<title>Document</title>
+	<title>Template Email</title>
 	<style>
 		*{
 			-ms-text-size-adjust: 100%;
@@ -46,14 +46,18 @@
 			font-weight: bold; 
 			text-transform: uppercase;
 		}
+		.footer-text{
+			color: #000000 !important;
+		}
 	</style>
+	<!-- Conditional for Outlook  -->
 	<!--[if mso]>
 		<style type="text/css">
 		  body, table, td {font-family: Courier, Arial, sans-serif, Helvetica !important;}
 		</style>
 	<![endif]-->
 	<style>
-		@media screen and (max-width: 480px){
+		@media screen and (max-width: 440px){
 			.home {
 				width: 100% !important;
 				margin: 0 auto !important;
@@ -64,11 +68,17 @@
 				max-width: 100% !important;
 				direction: ltr !important;
 			}
+			.footer-text{
+				color: yellow !important;
+			}
 		}
 
-		@media screen and (max-device-width: 375px) {
+		@media screen and (max-width: 375px) {
 			.home {
 				min-width: 375px !important;
+			}
+			.footer-text{
+				color: #FFFFFF !important;
 			}
 		}
 	</style>
@@ -145,7 +155,7 @@
 										<td class="home-sect" align="center">
 											<table border="0" cellspacing="0" cellpadding="0">
 												<tr>
-													<td align="center" valign="top" style="font-family: 'Courier';padding: 15px;color: #FFFFFF;">
+													<td align="center" valign="top" style="font-family: 'Courier';padding: 15px;" class="footer-text">
 														Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, delectus saepe perspiciatis error voluptates repellendus sint tempore repudiandae.
 													</td>
 												</tr>
