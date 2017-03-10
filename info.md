@@ -132,52 +132,53 @@
 
 * Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta los selectores por clases y Id.
 
-	1. Outlook
 
-	* Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
+1. Outlook
 
-	* Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
+* Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
-	* Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
+* Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
 
-	* ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
+* Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
 
-	* Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
+* ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
 
-		``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
+* Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
 
-		```	<!--[if mso 14]>Outlook 2010<![endif]--> ```
+	``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
 
-		```	<!--[if mso 15]>Outlook 2013<![endif]--> ```
+	```	<!--[if mso 14]>Outlook 2010<![endif]--> ```
 
-		```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
+	```	<!--[if mso 15]>Outlook 2013<![endif]--> ```
 
-	2 .Yahoo
+	```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
 
-	* Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
+2 .Yahoo
 
-	* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome. 
+* Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
 
-	3. Gmail 
+* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome. 
 
-	* Gmail ahora soporta estilos en el ``` <head> ``` . 
+3. Gmail 
 
-	* Soporta hasta cierta cantidad de carácteres por bloque de estilos, al superar ese número Gmail elimina ese bloque. 
+* Gmail ahora soporta estilos en el ``` <head> ``` . 
 
-	* Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
+* Soporta hasta cierta cantidad de carácteres por bloque de estilos, al superar ese número Gmail elimina ese bloque. 
 
-	* Matener los media queries ``` @media ``` en bloques separados de los estilos principales. 
+* Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
 
-	* Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
+* Matener los media queries ``` @media ``` en bloques separados de los estilos principales. 
 
-	* [Más info](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "Más info")
+* Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
+
+* [Más info](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "Más info")
 
 
-	4. Móvil 
+4. Móvil 
 
-	* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
+* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
 
-	* Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
+* Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
 
 ###Referencias 
 
