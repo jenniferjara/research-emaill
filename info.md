@@ -57,11 +57,11 @@
 
 * Usar al máximo los atributos Html.
 
-* Al tag Body añadir padding y margin de 0px para evitar espacios inesperados de los browsers.
+* Añadir padding y margin de 0px en el body para evitar espacios inesperados de los browsers.
 
 * Se puede usar un tag center (tener cuidado en Yahoo ya que le da una clase por default).
 
-* Usar un tag Table que actua como el 'body' real del la estructura, con un ancho de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
+* Usar ``` <table></table> ```  que actua como el 'body' real del la estructura, con un ancho de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
 
 * Los elementos tr y td funciones como fila y columna; si se crea una división más, se anida una nueva tabla: table>tr>td.
 
@@ -86,7 +86,7 @@
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
 
-* Incluir dentro de ``` <td></td> ``` estilos para las letras (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes.
+* Incluir dentro de ``` <td></td> ``` estilos de texto (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes.
 
 
 ####Imagenes
@@ -97,19 +97,18 @@
 
 * Mantener el tamaño lo mas ligero posible, el tamaño standard es debajo de 250kb (100kb es el tamaño ideal).
 
-* Imagenes como links: para quitar el borde azul típico de los links, se añade a la imagen los atributos ``` border="0" ``` .
+* Si usas imagenes como enlaces con el atributo ``` border="0" ``` quitas el típico borde azul de los enlaces.
 
-* Para clientes como Outlook establecer anchos definidos (como atributo Html), usar CSS para clientes mas amigables. 
+* Para clientes como Outlook establecer anchos definidos (como atributo Html), para clientes más amigables usar CSS clásico. 
 
 ####Tipografias
 
-* Fuentes como Arial, Verdana, Georgia, Times New Roman, y Courier son confiables y soportadas por la mayoria de los servicios de mail. 
-  [Más info](https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/ "")
+* Fuentes como Arial, Verdana, Georgia, Times New Roman, y Courier son confiables y soportadas por la mayoria de los servicios de mail. [Más info](https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/ "") 
 
 
 ####Varios
 
-* En las Media Queries usar !important para que puedan reemplazar a los estilos inline del Html.
+* En Media Queries usar !important para poder reemplazar a los estilos inline del Html.
 
 * Para los colores usar los seis carácteres del código hexagesimal. ex: #fffffff.
 
@@ -120,7 +119,7 @@
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` . 
 
-* Para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que contine el enlace: ``` <a href="#"></a> ``` .
+* Para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que envuelve el enlace: ``` <a href="#"></a> ``` .
 
 * Para aumentar el padding del boton hay dos maneras: aumentar el td que contiene al link o en el mismo link cambiando el display a inline-block.
 
@@ -131,60 +130,62 @@
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
-* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta los selectores por clases y ID.
+* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta los selectores por clases y Id.
 
-####Outlook
+	1. Outlook
 
-* Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
+	* Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
-* Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
+	* Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
 
-* Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
+	* Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
 
-* ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
+	* ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
 
-* Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
+	* Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
 
-	``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
+		``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
 
-	```	<!--[if mso 14]>Outlook 2010<![endif]--> ```
+		```	<!--[if mso 14]>Outlook 2010<![endif]--> ```
 
-	```	<!--[if mso 15]>Outlook 2013<![endif]--> ```
+		```	<!--[if mso 15]>Outlook 2013<![endif]--> ```
 
-	```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
+		```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
 
-####Yahoo
+	2 .Yahoo
 
-* Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
+	* Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
 
-* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome. 
+	* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome. 
 
-####Gmail 
+	3. Gmail 
 
-* Gmail sólo soporta ``` <style> ``` en el ``` <head> ``` . 
+	* Gmail ahora soporta estilos en el ``` <head> ``` . 
 
-* Soporta hasta cierta cantidad de carácteres por bloque de estilos, al superar ese número Gmail elimina ese bloque. 
+	* Soporta hasta cierta cantidad de carácteres por bloque de estilos, al superar ese número Gmail elimina ese bloque. 
 
-* Gmail no soporta declaraciones como ``` @media , @import y @font-face ```, si encuentra uno elimina todo el bloque de estilos, es mejor mantenerlo separado de estilos importantes.
+	* Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
 
-* Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
+	* Matener los media queries ``` @media ``` en bloques separados de los estilos principales. 
 
-* Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
+	* Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
 
-* [Más info](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "Más info")
+	* [Más info](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "Más info")
 
 
-#### Móvil 
+	4. Móvil 
 
-* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
+	* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
 
-* Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
+	* Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
 
 ###Referencias 
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [HTML email in Gmail ](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
+
+* [Gmail Supported](https://developers.google.com/gmail/design/reference/supported_css "")
 
 ###Info adicional
 
