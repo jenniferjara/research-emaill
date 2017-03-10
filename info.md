@@ -133,7 +133,7 @@
 * Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta los selectores por clases y Id.
 
 
-1. Outlook
+####Outlook
 
 * Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
@@ -153,13 +153,13 @@
 
 	```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
 
-2 .Yahoo
+####Yahoo
 
 * Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
 
-* ``` Margin: 0 auto; ``` centar una tabla en Yahoo y Chrome. 
+* Con ``` Margin: 0 auto; ``` se puede centrar una tabla en Yahoo y Chrome. 
 
-3. Gmail 
+####Gmail 
 
 * Gmail ahora soporta estilos en el ``` <head> ``` . 
 
@@ -171,10 +171,8 @@
 
 * Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
 
-* [Más info](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "Más info")
 
-
-4. Móvil 
+####Móvil 
 
 * Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
 
@@ -184,10 +182,10 @@
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [HTML email in Gmail ](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
-* [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
-
-* [Gmail Supported](https://developers.google.com/gmail/design/reference/supported_css "")
+* [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "")
+* [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
 
 ###Info adicional
 
+* [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
