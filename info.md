@@ -67,7 +67,7 @@
 
 ####<table></table> 
 
-* Añadir los atributos anteriores ( ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` ) esta vez con un ancho de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todas las pantallas de pc.
+* Añadir los atributos anteriores ( ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` ) esta vez con un ancho de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todos los servcios de mail.
 
 * En las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive; al cambiar el ancho de elemento padre, el resto de tablas se adaptará.
 
@@ -114,7 +114,7 @@
 
 * En los tags table y td se puede usar el atributo bgcolor (color de fondo).
 
-* Background Image: utlizar el atributo Html Background="url".
+* El atributo backgorund="url" permite poner un fondo de imagen, cuando con CSS no funciona, es amigable con algunos clientes mail.
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` . 
