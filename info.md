@@ -1,4 +1,4 @@
-#La regla de oro en el desarrollo de emails en HTML es: si existe un atributo de HTML, úsalo en vez de CSS.
+#La regla de oro en el desarrollo de emails es: si existe un atributo de HTML, úsalo en vez de CSS.
 
 ## Índice 
 * [Metas](#Metas) 
