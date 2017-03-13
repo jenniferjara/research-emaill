@@ -165,10 +165,11 @@
 
 * Soporta hasta cierta cantidad de carácteres por bloque de estilos, al superar ese número Gmail elimina ese bloque. 
 
-* Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
+* Los estilos importantes para el mail y amigables para Gmail, siempre deben ir primero. 
 
 * Matener los media queries ``` @media ``` en bloques separados de los estilos principales. 
 
+ [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "")
 
 ####Móvil 
 
@@ -181,11 +182,9 @@
 ###Referencias 
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
-* [HTML email in Gmail ](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
-* [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "")
+* [Email in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
 * [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
-* [VML Background](https://backgrounds.cm/ "")
-* [Imagenes de fondo con VML](https://backgrounds.cm/ "")
+* [Background con VML](https://backgrounds.cm/ "")
 * [Tipografias](https://envato.com/blog/experimental-typography-email/ "")
 
 ###Info adicional
