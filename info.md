@@ -183,7 +183,8 @@
 ##Referencias 
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
-* [Email in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
+* [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
+* [Media Queries: max-width y min-width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width "")
 * [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
 * [Background con VML](https://backgrounds.cm/ "")
 * [Tipografias](https://envato.com/blog/experimental-typography-email/ "")
