@@ -54,7 +54,7 @@
 * Formato de nombre de clases: nombre que tengan referencia al elemento; si se usa guiones usar uno porque yahoo no es compatible a clases con guion doble.
 
 
-####Body y Main Table
+####Body y Container Table
 
 * Usar al máximo los atributos Html.
 
@@ -166,7 +166,9 @@
 
 * Con ``` Margin: 0 auto; ``` se puede centrar una tabla en Yahoo y Chrome. 
 
-* Yahoo mail añade a las etiquetas ``` center ``` estilos que aveces no centrar a los elementos; para corregir usar ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` . 
+* Para centrar el mail usar ``` style ="table-layout: fixed;" ``` en el container table.
+
+* Yahoo mail añade estilos a las etiquetas ``` center ```, que aveces no centrar a los elementos y para corregir usar ``` text-align:-webkit-center; ``` .
 
 
 ####Gmail 
@@ -187,7 +189,9 @@
 
 * Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
 
+
 * * *
+
 
 ##Referencias 
 
