@@ -130,14 +130,14 @@
 
 * Para aumentar el padding de un boton hay dos maneras: aumentarlo en el td que contiene al link o en el mismo link cambiando el display a inline-block.
 
-* Colocar un href válido en los enlaces (para no tener errores en las pruebas de envio).
+* Asegurarse de que el href no este vacio, que contenga http:// o https:// , para no tener errores en las pruebas de envio.
 
 
 ##Según tipos de clientes de mail
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
-* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta los selectores por clases y Id.
+* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta clases o Id.
 
 
 ####Outlook
@@ -149,6 +149,8 @@
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar webkit.
 
 * ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
+
+* Outlook puede soportar fondo de imagen declaradas en el HTML, ignorando a las de CSS.
 
 * Condicionales que permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. 
  [Condicionales para Outlook](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "") 
@@ -164,8 +166,7 @@
 
 * Con ``` Margin: 0 auto; ``` se puede centrar una tabla en Yahoo y Chrome. 
 
-* Yahoo mail añade a las etiquetas ``` center ``` estilos que aveces no centra el contenido; para corregir usar ``` display: inline-block; ``` . 
-
+* Yahoo mail añade a las etiquetas ``` center ``` estilos que aveces no centrar a los elementos; para corregir usar ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` . 
 
 
 ####Gmail 
@@ -190,14 +191,15 @@
 
 ##Referencias 
 
-* [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
+* [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com "")
 * [Media Queries: max-width y min-width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width "")
 * [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
-* [Background con VML](https://backgrounds.cm/ "")
 * [Tipografias](https://envato.com/blog/experimental-typography-email/ "")
 
 ##Info adicional
 
+* [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
+* [Background con VML](https://backgrounds.cm/ "")
