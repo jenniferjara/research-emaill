@@ -101,6 +101,7 @@
 
 * Para clientes como Outlook establecer anchos definidos (como atributo Html), para clientes más amigables usar CSS clásico. 
 
+
 ####Tipografias
 
 * Fuentes como Arial, Verdana, Georgia, Times New Roman, y Courier son confiables y soportadas por la mayoria de los servicios de mail. [Más info](https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/ "") 
@@ -186,6 +187,8 @@
 * [HTML email in Gmail ](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
 * [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "")
 * [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
+* [VML Background](https://backgrounds.cm/ "")
+* [Imagenes de fondo con VML](https://backgrounds.cm/ "")
 
 ###Info adicional
 
