@@ -126,7 +126,7 @@
 
 * Para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que envuelve el enlace: ``` <a href="#"></a> ``` .
 
-* Para aumentar el padding del boton hay dos maneras: aumentar el td que contiene al link o en el mismo link cambiando el display a inline-block.
+* Para aumentar el padding de un boton hay dos maneras: aumentarlo en el td que contiene al link o en el mismo link cambiando el display a inline-block.
 
 * Colocar un href válido en los enlaces (para no tener errores en las pruebas de envio).
 
@@ -144,13 +144,13 @@
 
 * Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
 
-* Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar WebKit.
+* Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar webkit.
 
 * ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
 
-* Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
+* Condicionales que permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
 
-	``` <!--[if mso]>Outlook 2007<![endif]--> ```
+	``` <!--[if mso]>Outlook<![endif]--> ```
 
 
 ####Yahoo
@@ -168,8 +168,6 @@
 * Los estilos importantes para la plantilla y amigables para Gmail, siempre deben ir primero. 
 
 * Matener los media queries ``` @media ``` en bloques separados de los estilos principales. 
-
-* Evitar el uso de caracteres dentro de los estilos como: ``` =, *, /, $, %, \, &, @, ^, {, }, [, ], (, ), ?, |, <, > ``` ; puede haber problemas con la interpretación de Gmail. 
 
 
 ####Móvil 
