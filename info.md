@@ -104,7 +104,9 @@
 
 ####Tipografias
 
-* Fuentes como Arial, Verdana, Georgia, Times New Roman, y Courier son confiables y soportadas por la mayoria de los servicios de mail. [Más info](https://www.campaignmonitor.com/blog/email-marketing/2016/07/10-things-need-know-web-fonts-email-right-now/ "") 
+* Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier, etc son confiables y soportadas por la mayoria de los servicios de mail. [Más info](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing "")
+
+* Las etiquetas de @import y @font-face son soportadas en Apple Mail y algunos otros.
 
 
 ####Varios
@@ -146,13 +148,8 @@
 
 * Conditional: nos permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
 
-	``` <!--[if mso 12]>Outlook 2007<![endif]--> ```
+	``` <!--[if mso]>Outlook 2007<![endif]--> ```
 
-	```	<!--[if mso 14]>Outlook 2010<![endif]--> ```
-
-	```	<!--[if mso 15]>Outlook 2013<![endif]--> ```
-
-	```	<!--[if mso 16]>Outlook 2016<![endif]--> ```
 
 ####Yahoo
 
@@ -189,6 +186,7 @@
 * [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
 * [VML Background](https://backgrounds.cm/ "")
 * [Imagenes de fondo con VML](https://backgrounds.cm/ "")
+* [Tipografias](https://envato.com/blog/experimental-typography-email/ "")
 
 ###Info adicional
 
