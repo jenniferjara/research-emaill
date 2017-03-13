@@ -105,7 +105,8 @@
 
 ####Tipografias
 
-* Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier, etc son confiables y soportadas por la mayoria de los servicios de mail. [Más info](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing "")
+* Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
+ [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing "")
 
 * Apple Mail y algunos otros soportan @import y @font-face.
 
@@ -149,16 +150,23 @@
 
 * ``` mso-line-height-rule: exactly; ``` fuerza a Outlook a respetar el alto de línea de la tabla.
 
-* Condicionales que permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. [Más info](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "Más info") 
+* Condicionales que permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. 
+ [Condicionales para Outlook](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "") 
 
 	``` <!--[if mso]>Outlook<![endif]--> ```
 
 
 ####Yahoo
 
-* Yahoo mail añade a las etiquetas ``` center ``` una clase por default, que tiene un ``` text-align: center, ``` y que hace que los elementos se alinien a la izquierda; para corregir usar estilos inline con lo siguiente: ``` text-align:-webkit-center; ``` o  tambien añadir a la tabla que este dentro del tag center, ``` display: inline-block; ``` .
+* Cuando un elemento tiene estilos muy especificos usar estilos inline para que Yahoo pueda reconocerlos.
+
+* Los estilos asigandos a etiquetas tienen mayor predominancia sobre clases o estilos inline.
 
 * Con ``` Margin: 0 auto; ``` se puede centrar una tabla en Yahoo y Chrome. 
+
+* Yahoo mail añade a las etiquetas ``` center ``` estilos que aveces no centra el contenido; para corregir usar ``` display: inline-block; ``` . 
+
+
 
 ####Gmail 
 
