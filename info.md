@@ -13,6 +13,7 @@
 * [Referencias](#Referencias)
 
 * * *
+##Contenido 
 
 ####Metas
 
@@ -179,7 +180,7 @@
 
 * * *
 
-###Referencias 
+##Referencias 
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [Email in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
@@ -187,7 +188,7 @@
 * [Background con VML](https://backgrounds.cm/ "")
 * [Tipografias](https://envato.com/blog/experimental-typography-email/ "")
 
-###Info adicional
+##Info adicional
 
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
