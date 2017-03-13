@@ -106,7 +106,9 @@
 
 * Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier, etc son confiables y soportadas por la mayoria de los servicios de mail. [Más info](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing "")
 
-* Las etiquetas de @import y @font-face son soportadas en Apple Mail y algunos otros.
+* Apple Mail y algunos otros soportan @import y @font-face.
+
+* Usar condicionales para versiones de Outlook, si es necesario.
 
 
 ####Varios
