@@ -89,7 +89,7 @@
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
 
-* Se puede incluir estilos inline para el texto (font-family, font-size, color, text-decoration, etc) dentro de las celdas (td) para evitar que algunos clientes de mail subscriban los estilos.
+* Se puede incluir estilos inline para el texto (font-family, font-size, color, text-decoration, etc) dentro de las celdas (td) para evitar que algunos clientes de mail sobre escriban tus estilos.
 
 
 ####Imagenes
@@ -142,14 +142,14 @@
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
-* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta clases o ID.
+* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y ya no son necesarios para Yahoo Mail.
 
 
 #### Outlook
 
 * Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
-* Para versiones modernas de Outlook añadir en las tablas ``` border-collapse: collapse ``` para evitar estacios entre ellas y sus bordes.
+* Para versiones modernas de Outlook añadir en las tablas ``` border-collapse: collapse ``` para evitar espacios entre ellas y sus bordes.
 
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar webkit.
 
@@ -186,25 +186,28 @@
 
 ####Móvil 
 
-* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios. 
+* Para evitar el crecimiento de tamaño del texto en los dispositivos móviles, se usa ``` text-size-adjust: 100% ``` con los prefijos que creas necesarios, para desactivar el comportamiento automático.
 
 * Para las versiones movil de algunos servicios es mejor dejar los estilos inline de cada elemento.
 
 
 * * *
 
-
 ##Referencias 
 
-* [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
+* [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/ "")
+
 * [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com "")
+
 * [Media Queries: max-width y min-width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width "")
+
+* [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
 * [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
+
 * [Tipografias](https://envato.com/blog/experimental-typography-email/ "")
 
 ##Info adicional
 
-* [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/ "")
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
