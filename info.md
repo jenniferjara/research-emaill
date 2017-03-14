@@ -3,13 +3,13 @@
 ## Índice 
 * [Metas](#Metas) 
 * [Estilos](#Estilos) 
-* [Body y Container Main](#Body y Container Table) 
+* [Body y Container Main](#Container Table) 
 * [Tablas](#<table></table>)
 * [Td](#<td></td>)
 * [Imagenes](#Imagenes)
 * [Tipografía](#Tipografia) 
 * [Varios](#Varios) 
-* [Clientes de servicio de mail](#Clientes de servicio de mail)
+* [Clientes de servicio de mail](#Servicios de Mail)
 * [Referencias](#Referencias)
 
 * * *
@@ -56,7 +56,7 @@
 * Utilizar atributos HTML al máximo en lugar de CSS.
 
 
-####Body y Container Table
+####Container Table
 
 * Añadir padding y margin de 0px en el body para evitar espacios inesperados de los browsers.
 
@@ -108,7 +108,7 @@
 ####Tipografias
 
 * Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
- [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing "")
+ [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
 
 * Apple Mail y algunos otros soportan @import y @font-face.
 
@@ -138,7 +138,7 @@
 * Asegurarse de que el href no este vacio, que contenga http:// o https:// , para no tener errores en las pruebas de envio.
 
 
-##Clientes de servicio de mail
+##Servicios de Mail
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
@@ -158,7 +158,7 @@
 * Outlook puede soportar fondo de imagen declaradas en el HTML, ignorando a las de CSS.
 
 * Condicionales que permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. 
- [Condicionales para Outlook](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "")
+ [Condicionales para Outlook](http://labs.actionrocket.co/microsoft-outlook-conditional-statements)
 
 	``` <!--[if mso]>Outlook<![endif]--> ```
 
@@ -182,7 +182,7 @@
 
 * Matener los media queries ``` @media ``` en bloques separados de los estilos principales. 
 
- [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s "")
+ [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s)
 
 ####Móvil 
 
@@ -195,20 +195,20 @@
 
 ##Referencias 
 
-* [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/ "")
+* [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 
-* [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com "")
+* [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com)
 
-* [Media Queries: max-width y min-width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width "")
+* [Media Queries: max-width y min-width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width)
 
-* [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps "")
-* [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css "")
+* [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps)
+* [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css)
 
-* [Tipografias](https://envato.com/blog/experimental-typography-email/ "")
+* [Tipografias](https://envato.com/blog/experimental-typography-email/)
 
 ##Info adicional
 
-* [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
-* [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
-* [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
-* [Background con VML](https://backgrounds.cm/ "")
+* [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/)
+* [Blog de Lee Munroe](http://www.leemunroe.com/blog/)
+* [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email)
+* [Background con VML](https://backgrounds.cm/)
