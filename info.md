@@ -87,7 +87,7 @@
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
 
-* Incluir dentro de ``` <td></td> ``` estilos de texto (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes.
+* Incluir dentro de ``` <td></td> ``` estilos de texto (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes. En el caso de Yahoo es mejor ser más específicos.
 
 
 ####Imagenes
@@ -164,7 +164,7 @@
 
 * Los estilos asigandos a etiquetas tienen mayor predominancia sobre clases o estilos inline.
 
-* Con ``` Margin: 0 auto; ``` se puede centrar una tabla en Yahoo y Chrome. 
+* Con ``` Margin: 0 auto; ``` se puede centrar una tabla en Yahoo. 
 
 * Para centrar el mail usar ``` style ="table-layout: fixed;" ``` en el container table.
 
