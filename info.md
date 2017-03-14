@@ -3,13 +3,13 @@
 ## Índice 
 * [Metas](#Metas) 
 * [Style](#Style) 
-* [Body y Table Main](#Body y Main Table) 
+* [Body y Container Main](#Body y Container Table) 
 * [Tablas](#<table></table>)
 * [Td](#<td></td>)
 * [Imagenes](#Imagenes)
 * [Tipografía](#Tipografia) 
 * [Varios](#Varios) 
-* [Clientes de servicio de mail](#Según tipos de clientes de mail)
+* [Clientes de servicio de mail](#Clientes de mail)
 * [Referencias](#Referencias)
 
 * * *
@@ -133,7 +133,7 @@
 * Asegurarse de que el href no este vacio, que contenga http:// o https:// , para no tener errores en las pruebas de envio.
 
 
-##Según tipos de clientes de mail
+##Clientes de mail
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
