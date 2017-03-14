@@ -1,6 +1,7 @@
-# La regla de oro en el desarrollo de emails es: si existe un atributo de HTML, úsalo en vez de CSS.
+#La regla de oro en el desarrollo de emails es: si existe un atributo de HTML, úsalo en vez de CSS.
 
-## Índice 
+##Índice 
+
 * [Metas](#Metas) 
 * [Estilos](#Estilos) 
 * [Body y Container Main](#Container Table) 
@@ -13,9 +14,9 @@
 * [Referencias](#Referencias)
 
 * * *
-## Contenido 
+##Contenido 
 
-#### Metas
+####Metas
 
 * Código para el navegador a fin que valide el código HTML de archivo: 
 ``` html
@@ -47,7 +48,7 @@
 <meta name="x-apple-disable-message-reformatting"> 
 ```
 
-#### Estilos
+####Estilos
 
 * Usar estilos inline en cada elemento y/o los estilos en el head (algunos clientes de mail reconocen al style en el head y otros no, asi que los estilos inline nos ayudan en esos casos). 
 
@@ -56,7 +57,7 @@
 * Utilizar atributos HTML al máximo en lugar de CSS.
 
 
-#### Container Table
+####Container Table
 
 * Añadir padding y margin de 0px en el body para evitar espacios inesperados de los browsers.
 
@@ -74,7 +75,7 @@
 
 * Cuando hay elementos de tamaños específicos dentro de una tabla (como imagenes), es mejor poner tamaños exactos (px).
 
-#### <td></td> 
+####<td></td> 
 
 * Para centrar el contenido usar el atributo ``` align="center" ``` .
 
@@ -83,8 +84,8 @@
 * Es seguro utilizar relleno en los tables cell, los tags como div o p se comportan de manera diferente e inesperada, ademas que Outlook no los reconoce en estos elementos.
 
 * Especificar cada uno de los valores del relleno: 
-	1. ``` padding: 10px 3px 10px 4px; ``` 
-	2. ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
+	+ ``` padding: 10px 3px 10px 4px; ``` 
+	+ ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
 
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
@@ -92,7 +93,7 @@
 * Se puede incluir estilos inline para el texto (font-family, font-size, color, text-decoration, etc) dentro de las celdas (td) para evitar que algunos clientes de mail sobre escriban tus estilos.
 
 
-#### Imagenes
+####Imagenes
 
 * Normalmente Outlook, Gmail y Yahoo bloquean las imagenes por default, es importante colocar un Alt correcto, para dar referencia al usuario del contenido de la imagen.
 
@@ -105,7 +106,7 @@
 * Para clientes como Outlook establecer anchos definidos (como atributo Html), para clientes más amigables usar CSS clásico. 
 
 
-#### Tipografias
+####Tipografias
 
 * Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
  [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
@@ -115,7 +116,7 @@
 * Usar condicionales para versiones de Outlook, si es necesario.
 
 
-#### Varios
+####Varios
 
 * En Media Queries usar !important para poder reemplazar a los estilos inline del Html.
 
@@ -138,14 +139,14 @@
 * Asegurarse de que el href no este vacio, que contenga http:// o https:// , para no tener errores en las pruebas de envio.
 
 
-## Servicios de Mail
+##Servicios de Mail
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
 * Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y ya no son necesarios para Yahoo Mail.
 
 
-#### Outlook
+####Outlook
 
 * Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
@@ -163,7 +164,7 @@
 	``` <!--[if mso]>Outlook<![endif]--> ```
 
 
-#### Yahoo
+####Yahoo
 
 * Cuando un elemento tiene estilos muy especificos usar estilos inline para que Yahoo pueda reconocerlos.
 
@@ -172,7 +173,7 @@
 * Yahoo mail añade estilos a las etiquetas ``` center ```, que aveces no centrar a los elementos y para corregir usar ``` text-align: -webkit-center; ``` .
 
 
-#### Gmail 
+####Gmail 
 
 * Gmail ahora soporta estilos en el ``` <head> ``` . 
 
@@ -181,8 +182,7 @@
 * Los estilos importantes para el mail y amigables para Gmail, siempre deben ir primero. 
 
 * Matener los media queries ``` @media ``` en bloques separados de los estilos principales. 
-
- [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s)
+  [Actualizaciones en Gmail](https://emails.hteumeuleu.com/troubleshooting-gmails-responsive-design-support-ad124178bf81#.uc62hp58s)
 
 ####Móvil 
 
@@ -193,7 +193,7 @@
 
 * * *
 
-## Referencias 
+##Referencias 
 
 * [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 
@@ -206,7 +206,7 @@
 
 * [Tipografias](https://envato.com/blog/experimental-typography-email/)
 
-## Info adicional
+##Info adicional
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/)
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/)
