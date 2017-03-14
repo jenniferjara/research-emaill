@@ -3,13 +3,13 @@
 ## Índice 
 * [Metas](#Metas) 
 * [Estilos](#Estilos) 
-* [Body y Container Main](#Container Table) 
+* [Body y Container Main](#container-table) 
 * [Tablas](#<table></table>)
 * [Td](#<td></td>)
 * [Imagenes](#Imagenes)
 * [Tipografía](#Tipografia) 
 * [Varios](#Varios) 
-* [Clientes de servicio de mail](#Servicios de Mail)
+* [Clientes de servicio de mail](#servicios-de-mail)
 * [Referencias](#Referencias)
 
 * * *
@@ -55,6 +55,7 @@
 
 * Utilizar atributos HTML al máximo en lugar de CSS.
 
+* * *
 
 #### Container Table
 
@@ -164,6 +165,8 @@
  [Condicionales para Outlook](http://labs.actionrocket.co/microsoft-outlook-conditional-statements)
 
 	``` <!--[if mso]>Outlook<![endif]--> ```
+
+* Usa Margin (capital M) para que el margin funciones en Outlook.
 
 
 #### Yahoo
