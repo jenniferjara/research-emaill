@@ -2,14 +2,14 @@
 
 ## Índice 
 * [Metas](#Metas) 
-* [Style](#Style) 
+* [Estilos](#Estilos) 
 * [Body y Container Main](#Body y Container Table) 
 * [Tablas](#<table></table>)
 * [Td](#<td></td>)
 * [Imagenes](#Imagenes)
 * [Tipografía](#Tipografia) 
 * [Varios](#Varios) 
-* [Clientes de servicio de mail](#Clientes de mail)
+* [Clientes de servicio de mail](#Clientes de servicio de mail)
 * [Referencias](#Referencias)
 
 * * *
@@ -47,30 +47,30 @@
 <meta name="x-apple-disable-message-reformatting"> 
 ```
 
-####Style
+####Estilos
 
 * Usar estilos inline en cada elemento y/o los estilos en el head (algunos clientes de mail reconocen al style en el head y otros no, asi que los estilos inline nos ayudan en esos casos). 
 
 * Formato de nombre de clases: nombre que tengan referencia al elemento; si se usa guiones usar uno porque yahoo no es compatible a clases con guion doble.
 
+* Utilizar atributos HTML al máximo en lugar de CSS.
+
 
 ####Body y Container Table
 
-* Usar al máximo los atributos Html.
-
 * Añadir padding y margin de 0px en el body para evitar espacios inesperados de los browsers.
 
-* Se puede usar un tag center (tener cuidado en Yahoo ya que le da una clase por default).
+* Se puede usar un tag center (tener cuidado en Yahoo ya que le da una clase por default que podría cambiar el diseño del mail).
 
-* Usar ``` <table></table> ```  que actua como el 'body' real del la estructura, con un ancho de 100% y ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
+* Usar ``` <table></table> ```  que actua como el 'body' real del la estructura, con un ancho de 100%, ```border="0" ``` , ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` para quitar espacios entre las tablas.
 
 * Los elementos tr y td funciones como fila y columna; si se crea una división más, se anida una nueva tabla: table>tr>td.
 
 ####<table></table> 
 
-* Añadir los atributos anteriores ( ``` cellpadding = "0" ``` y ``` cellspacing = "0" ``` ) esta vez con un ancho de 600px y align center, el ancho de 600px es seguro para que el mail se muestre en casi todos los servcios de mail.
+* Con los atributos anteriores crear una tabla que tiene ancho de 600px y align center, este ancho es seguro para que el mail se muestre en casi todos los servcios de mail.
 
-* En las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer el email responsive; al cambiar el ancho de elemento padre, el resto de tablas se adaptará.
+* En las siguientes tablas el ancho se puede manejar en porcentajes, asi se adapatará al momento de hacer un email adaptable; al cambiar el ancho de elemento padre, el resto de tablas se adaptará.
 
 * Cuando hay elementos de tamaños específicos dentro de una tabla (como imagenes), es mejor poner tamaños exactos (px).
 
@@ -78,16 +78,18 @@
 
 * Para centrar el contenido usar el atributo ``` align="center" ``` .
 
-* Para alinear verticalmente el contenido de la celda hacia arriba, usar ``` valing="top" ```. Este es un atributo HTML equivalente a verical-align en CSS.
+* Para alinear verticalmente el contenido de una celda, usar ``` valing="top" ```. Este es un atributo HTML equivalente a verical-align en CSS.
  
-* Es seguro utilizar padding en los tag td, los tags como div o p se comportan de manera diferente e inesperada, ademas que Outlook no lo reconoce en estos elementos.
+* Es seguro utilizar relleno en los tables cell, los tags como div o p se comportan de manera diferente e inesperada, ademas que Outlook no los reconoce en estos elementos.
 
-* Especificar cada uno de sus valores: ``` padding: 10px 3px 10px 4px; ``` o ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
+* Especificar cada uno de los valores del relleno: 
+	1. ``` padding: 10px 3px 10px 4px; ``` 
+	2. ``` padding-top:10px; padding-right:10px; padding-bottom:8px ; padding-left:5px; ``` .
 
 * Si hay problemas con el padding (que la plataforma de envio de mail excluya los estilos CSS) crear espacios con celdas vacias: 
   ``` <tr><td style="font-size: 0; line-height: 0;" height="10">&nbsp;</td></tr> ``` , (el atributo height varia). 
 
-* Incluir dentro de ``` <td></td> ``` estilos de texto (font-family, font-size, color, text-decoration, etc) para evitar que algunos clientes de mail subcriban los estilos de fuentes. En el caso de Yahoo es mejor ser más específicos.
+* Se puede incluir estilos inline para el texto (font-family, font-size, color, text-decoration, etc) dentro de las celdas (td) para evitar que algunos clientes de mail subscriban los estilos.
 
 
 ####Imagenes
@@ -121,30 +123,33 @@
 
 * En los tags table y td se puede usar el atributo bgcolor (color de fondo).
 
-* El atributo backgorund="url" permite poner un fondo de imagen, cuando con CSS no funciona, es amigable con algunos clientes mail.
+* El atributo backgorund="url" permite poner un fondo de imagen cuando en CSS no funciona, es amigable con algunos clientes mail.
 
 * En caso de las etiquetas de enlace, se puede cambiar de color con estilos inline o con la etiqueta font:
   ``` <a href="#" style="color: #ffffff;"><font color="ffffff">link</font></a> ``` . 
 
-* Para crear botones con bordes redondeados, aplicar border-radius en la etiqueta td que envuelve el enlace: ``` <a href="#"></a> ``` .
+* Border redondeados:
+	1. Aplicar border-radius en el table cell (td) que envuelve el enlace.
 
-* Para aumentar el padding de un boton hay dos maneras: aumentarlo en el td que contiene al link o en el mismo link cambiando el display a inline-block.
+* Relleno en un boton:
+	1. Aumnetar el relleno en el table cell que envuelve al enlace.
+	2. Aumentarlo en el mismo enlace, cambiando a display: inline-block.
 
 * Asegurarse de que el href no este vacio, que contenga http:// o https:// , para no tener errores en las pruebas de envio.
 
 
-##Clientes de mail
+##Clientes de servicio de mail
 
 * La mayoría de los clientes de correo web como Gmail, Outlook.com y Yahoo! Mail no permiten valores de los márgenes negativos. 
 
-* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta clases o Id.
+* Evita el uso de selectores por atributos, Gmail no es compatible con este tipo de selectores y Yahoo ya acepta clases o ID.
 
 
-####Outlook
+#### Outlook
 
 * Para evitar que Outlook añada espacio entre las tablas usar ``` mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; ``` .
 
-* Añadir a las tablas estilos inline ``` border-collapse: collapse ``` para evitar que versiones modernas de Outlook añadan espacios entre la tabla y el border de la tabla.
+* Para versiones modernas de Outlook añadir en las tablas ``` border-collapse: collapse ``` para evitar estacios entre ellas y sus bordes.
 
 * Para Apple Mail, Outlook para Mac, Android Mail y iOS Mail usar webkit.
 
@@ -153,22 +158,18 @@
 * Outlook puede soportar fondo de imagen declaradas en el HTML, ignorando a las de CSS.
 
 * Condicionales que permiten añadir fragmentos de HTML que sólo son leídos por las versiones indicadas de Outlook. 
- [Condicionales para Outlook](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "") 
+ [Condicionales para Outlook](http://labs.actionrocket.co/microsoft-outlook-conditional-statements "")
 
 	``` <!--[if mso]>Outlook<![endif]--> ```
 
 
-####Yahoo
+#### Yahoo
 
 * Cuando un elemento tiene estilos muy especificos usar estilos inline para que Yahoo pueda reconocerlos.
 
-* Los estilos asigandos a etiquetas tienen mayor predominancia sobre clases o estilos inline.
+* Con ``` style ="table-layout: fixed;" ``` se puede centrar contenido en una tabla.
 
-* Con ``` Margin: 0 auto; ``` se puede centrar una tabla en Yahoo. 
-
-* Para centrar el mail usar ``` style ="table-layout: fixed;" ``` en el container table.
-
-* Yahoo mail añade estilos a las etiquetas ``` center ```, que aveces no centrar a los elementos y para corregir usar ``` text-align:-webkit-center; ``` .
+* Yahoo mail añade estilos a las etiquetas ``` center ```, que aveces no centrar a los elementos y para corregir usar ``` text-align: -webkit-center; ``` .
 
 
 ####Gmail 
@@ -203,6 +204,7 @@
 
 ##Info adicional
 
+* [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/ "")
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/ "HTeuMeuLeu")
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/ "")
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email "")
