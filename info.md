@@ -92,13 +92,12 @@ A. Outlook
 B. Yahoo 
 * Centrar los elementos en una tabla con table-layout: fixed; .
 * Para estilos especificos en un elemnto usar estilos inline con !important.
-* 
 
 C. Gmail
-* Soporta estilos en el head y estilos en las media queries usando !important.
-* Modificar estilos en Medias Queries con !important.
+* Soporta estilos en el head y especificaciones en las media queries usando !important.
 * Usar un bloque para estilos generales y otro para Media Queries.
-* Gmail no es compatible con selectores de atributos y para Yahoo ya no es necesario el uso de ellos. 
+* Gmail no es compatible con selectores de atributos y para Yahoo ya no es necesario el uso de ellos.
+* 
 
 * * *
 
@@ -120,6 +119,8 @@ B. Tipografias
 
 * Apple Mail y algunos otros soportan @import y @font-face.
 
+C. Videos
+
 * El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente
 
 * * * 
@@ -137,7 +138,6 @@ B. Tipografias
 
 * [Tipografias](https://envato.com/blog/experimental-typography-email/)
 
-## Info adicional
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/)
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/)
