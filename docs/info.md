@@ -1,10 +1,9 @@
-# La regla de oro en el desarrollo de emails es: si existe un atributo de HTML, úsalo en vez de CSS.
+# Guía General para Email HTML
 
 ## Índice 
 * [Metas](#Metas) 
 * [Estilos](#Estilos) 
 * [Contenido](#contenido) 
-* [Varios](#varios) 
 * [Clientes de servicio de mail](#servicios-de-mail)
 * [Referencias](#Referencias)
 
@@ -37,12 +36,13 @@
 <meta name="x-apple-disable-message-reformatting"> 
 ```
 
-### Estilos
+### Estilos en el Head
 
 * En el selector universal añadir text-size-adjust: 100% para evitar el crecimiento del texto en versiones moviles, con los prefijo por navegador.
 * En el Body usar padding y margin 0.
-* Si usas titulos (h1,h2,...) párrafos o divs añadir padding y margin 0.
 * Border-collapse: collapse; en las tablas para evitar espacios en el border.
+* En las tablas y celdas añadir mso-table-lspace: 0pt y 	mso-table-rspace: 0pt para que Outlook no añada espacios entre ellas.
+* Si usas titulos (h1,h2,...) párrafos o divs añadir padding y margin 0.
 * Display block; en las imagenes (img) para evitar que se añada espacios debajo de ellas.
 * Usar los seis caracteres del código hexadecimal de los colores.
 
@@ -83,11 +83,7 @@ D. Botones
 
 * Colocar en los enlaces href validos para las pruebas del mail.
 
-* * *
-
-### Varios
-
-A. Imagenes
+E. Imagenes
 
 * Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
 * Mantener con un tamaño ligero en las imágenes (standard 250kb - ideal 100kb).
@@ -96,13 +92,13 @@ A. Imagenes
 * Establecer ancho como atributo HTML para Outlook, y CSS para Gmail y Yahoo.
 * Para Outlook establecer ancho con atributo HTML, y para Gmail y Yahoo usar CSS. 
 
-B. Tipografias
+F. Tipografias
 
-* Fuentes como Arial, Comic Sans, Courier, Georgia, Verdana, Times New Roman; son confiables y soportadas por la mayoria de los servicios de mail. 
- [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
+* Fuentes como Arial, Comic Sans, Courier, Georgia, Verdana, Times New Roman; son confiables y soportadas por los clientes de mail.
+ [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing) .
 * El método @import tiene soporte en dispositivos iOS y Apple Mail. No tiene soporte en Gmail y Outlook o Yahoo.
 
-C. Videos 
+G. Videos 
 
 * El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente.
 
@@ -120,14 +116,14 @@ A. Outlook
 B. Yahoo 
 
 * Centrar los elementos en una tabla con table-layout: fixed; .
-* Para estilos especificos en un elemnto usar estilos inline con !important.
+* Si un elemento tiene estilos especificos usar !important.
 
 C. Gmail
 
 * Soporta estilos en el head y especificaciones en las media queries usando !important.
 * Usar un bloque para estilos generales y otro para Media Queries.
 * Gmail no es compatible con selectores de atributos y para Yahoo ya no es necesario el uso de ellos.
-* 
+
 
 * * *
 
