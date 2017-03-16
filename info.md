@@ -48,7 +48,7 @@
 * Usar padding y margin 0 en el body.
 * Si se usa titulos (h1,h2,...) párrafos o divs añadir padding y margin 0.
 * Border-collapse: collapse; en las tablas para evitar espacios en el border.
-* display block; en las imagenes para evitar que se añada espacios debajo de ellas.
+* Display block; en las imagenes para evitar que se añada espacios debajo de ellas.
 * Colores: usar los seis caracteres del código hexagesimal.
 
 * * *
@@ -56,6 +56,7 @@
 ### Contenido
 
 A. Tablas
+
 * Usar atributos html al máximo.
 * En tablas agregar atributos border=0, cellpadding=0, cellspacing=0.
 * Una tabla con una ancho de 100% que actuará como en body del documento. 
@@ -63,33 +64,36 @@ A. Tablas
 * En las siguientes tablas usar width de 100% para que ocupe todo el ancho de la tabla de 600px.
 
 B. Celdas
+
 * En las celdas (td) agregar atributos align(alineamiento) y valign(alineamiento vertical).
-* Es seguro usar estilos de relleno en las celdas(td), en otros elementos (como divs o párrafos) se comportan de manera inesperada en Outlook.  
-* Estlos de fuentes y textos son seguros de aplicar en las celdas.
+* Es seguro usar estilos de relleno en las celdas (td), en otros elementos (como divs o párrafos) se comportan de manera inesperada en Outlook.  
+* Los estilos para fuentes y textos son seguros de aplicar en las celdas.
 
 C. Fondos
+
 * Añadir color de fondo con bgcolor (atributo HTML) y los colores en codigo hexagesimal.
-* Para imagenes de fondo usar el atributo HTML background en las celdas (td)
+* Con el atributo background en las celdas (td) se puede usar una imagen de fondo.
 
 D. Botones
+
 1. Con Borde
-* Una tabla sin ancho. tr>td>
-* Usar una tabla con border-collapse separate, border-radius y borde. tr>
-* Una celda con padding y estilos de fuentes.
-* Un enlace con sus estilos especificos.
+ + Una tabla sin ancho. tr>td>
+ + Usar una tabla con border-collapse separate, border-radius y borde. tr>
+ + Una celda con padding y estilos de fuentes.
+ + Un enlace con sus estilos especificos.
 
 2. Con Relleno
-* Una tabla sin ancho. tr>
-* Una celda con padding, border-radius y color de fondo.
-* Un enlace con sus estilos especificos.
-
-* Colocar en los enlaces href validos para las pruebas del mail.
+ + Una tabla sin ancho. tr>
+ + Una celda con padding, border-radius y color de fondo.
+ + Un enlace con sus estilos especificos.
+ + Colocar en los enlaces href validos para las pruebas del mail.
 
 * * *
 
 ### Varios
 
 A. Imagenes
+
 * Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
 * Mantener un tamaño ligero en las imágenes (standard 250kb - ideal 100kb).
 * Si la imagen se usa como enlace, con borde 0 se evita el borde azul típico de los enlaces.
@@ -97,12 +101,14 @@ A. Imagenes
 * Para Outlook establecer ancho con atributo HTML, y para Gmail y Yahoo usar CSS. 
 
 B. Tipografias
+
 * Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
  [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
 
 * Apple Mail y algunos otros soportan @import y @font-face.
 
 C. Videos
+
 * El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente
 
 * * * 
@@ -110,16 +116,19 @@ C. Videos
 ### Servicios de Mail
 
 A. Outlook
+
 * Evitar espaciado en tablas:  mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impotant; .
 * Fuerza a Outlook a respetar el alto de la tabla: mso-line-height-rule: exactly; .
 * Agregar condicionales <!--[if mso]>Outlook<![endif]--> para especificaciones de estilos, fondos de imagen o estructura en Outlook.
 *  Margin (con mayúscula) funciona en Outlook.
 
 B. Yahoo 
+
 * Centrar los elementos en una tabla con table-layout: fixed; .
 * Para estilos especificos en un elemnto usar estilos inline con !important.
 
 C. Gmail
+
 * Soporta estilos en el head y especificaciones en las media queries usando !important.
 * Usar un bloque para estilos generales y otro para Media Queries.
 * Gmail no es compatible con selectores de atributos y para Yahoo ya no es necesario el uso de ellos.
