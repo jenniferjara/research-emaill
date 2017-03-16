@@ -16,27 +16,22 @@
 ``` html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 ```
-
-* Brinda soporte para los caracteres Unicode del documento:
+* Soporte para los caracteres Unicode del documento:
 ``` html 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 ```
-
-* Control en las vistas móvil (aunque no estamos seguros que funcione del todo bien, pero...) 
+* Control en las vistas móvil 
 ``` html 
 <meta name="viewport" content="width=device-width"> 
 ```
-
 * Permite una vista responsive en Windows Phone: 
 ``` html 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 ``` 
-
-* Evita que los números telefonicos aparezcan como link (cambiar a ``` telephone=yes ``` para que se vean como links)
+* Evita que los números telefonicos aparezcan como link
 ``` html
 <meta name="format-detection" content="telephone=no">
 ``` 
-
 * Deshabilita el auto-scale en iOS 10 mail: 
 ``` html 
 <meta name="x-apple-disable-message-reformatting"> 
@@ -44,12 +39,12 @@
 
 ### Estilos
 
-* Añadir en el selector universal text-size-adjust: 100% para evitar el crecimiento del texto en versiones moviles.
-* Usar padding y margin 0 en el body.
-* Si se usa titulos (h1,h2,...) párrafos o divs añadir padding y margin 0.
+* En el selector universal añadir text-size-adjust: 100% para evitar el crecimiento del texto en versiones moviles, con los prefijo por navegador.
+* En el Body usar padding y margin 0.
+* Si usas titulos (h1,h2,...) párrafos o divs añadir padding y margin 0.
 * Border-collapse: collapse; en las tablas para evitar espacios en el border.
-* Display block; en las imagenes para evitar que se añada espacios debajo de ellas.
-* Colores: usar los seis caracteres del código hexagesimal.
+* Display block; en las imagenes (img) para evitar que se añada espacios debajo de ellas.
+* Usar los seis caracteres del código hexadecimal de los colores.
 
 * * *
 
@@ -57,8 +52,7 @@
 
 A. Tablas
 
-* Usar atributos html al máximo.
-* En tablas agregar atributos border=0, cellpadding=0, cellspacing=0.
+* En las tablas agregar atributos border=0, cellpadding=0, cellspacing=0.
 * Una tabla con una ancho de 100% que actuará como en body del documento. 
 * Una tabla con un ancho de 600px, es un ancho seguro para la visualizacipon del documento en los clientes de mail y align center para centrar las celdas.
 * En las siguientes tablas usar width de 100% para que ocupe todo el ancho de la tabla de 600px.
@@ -66,27 +60,28 @@ A. Tablas
 B. Celdas
 
 * En las celdas (td) agregar atributos align(alineamiento) y valign(alineamiento vertical).
-* Es seguro usar estilos de relleno en las celdas (td), en otros elementos (como divs o párrafos) se comportan de manera inesperada en Outlook.  
+* Es seguro usar relleno en las celdas (td), en otros elementos (como divs o párrafos) se comportan de manera inesperada en Outlook. 
 * Los estilos para fuentes y textos son seguros de aplicar en las celdas.
 
 C. Fondos
 
-* Añadir color de fondo con bgcolor (atributo HTML) y los colores en codigo hexagesimal.
-* Con el atributo background en las celdas (td) se puede usar una imagen de fondo.
+* Añadir color de fondo con el atributo bgcolor y con los seis caracteres hexadecimales.
+* Añadir una imagen de fondo con el atributo background en las celdas (td).
 
 D. Botones
 
 1. Con Borde
- + Una tabla sin ancho. tr>td>
- + Usar una tabla con border-collapse separate, border-radius y borde. tr>
+ + Una tabla sin ancho. (tr>td>)
+ + Usar una tabla con border-collapse separate, border-radius y borde. (tr>)
  + Una celda con padding y estilos de fuentes.
  + Un enlace con sus estilos especificos.
 
 2. Con Relleno
- + Una tabla sin ancho. tr>
+ + Una tabla sin ancho. (tr>)
  + Una celda con padding, border-radius y color de fondo.
  + Un enlace con sus estilos especificos.
- + Colocar en los enlaces href validos para las pruebas del mail.
+
+* Colocar en los enlaces href validos para las pruebas del mail.
 
 * * *
 
@@ -95,21 +90,21 @@ D. Botones
 A. Imagenes
 
 * Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
-* Mantener un tamaño ligero en las imágenes (standard 250kb - ideal 100kb).
+* Mantener con un tamaño ligero en las imágenes (standard 250kb - ideal 100kb).
 * Si la imagen se usa como enlace, con borde 0 se evita el borde azul típico de los enlaces.
+* Para evitar que las imagenes tengan el border azul al usarlas de enlaces, aplicar el atributo border=0.
 * Establecer ancho como atributo HTML para Outlook, y CSS para Gmail y Yahoo.
 * Para Outlook establecer ancho con atributo HTML, y para Gmail y Yahoo usar CSS. 
 
 B. Tipografias
 
-* Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
+* Fuentes como Arial, Comic Sans, Courier, Georgia, Verdana, Times New Roman; son confiables y soportadas por la mayoria de los servicios de mail. 
  [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
+* El método @import tiene soporte en dispositivos iOS y Apple Mail. No tiene soporte en Gmail y Outlook o Yahoo.
 
-* Apple Mail y algunos otros soportan @import y @font-face.
+C. Videos 
 
-C. Videos
-
-* El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente
+* El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente.
 
 * * * 
 
