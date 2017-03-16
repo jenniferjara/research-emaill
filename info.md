@@ -4,13 +4,13 @@
 * [Metas](#Metas) 
 * [Estilos](#Estilos) 
 * [Contenido](#contenido) 
-* [Varios](#Varios) 
+* [Varios](#varios) 
 * [Clientes de servicio de mail](#servicios-de-mail)
 * [Referencias](#Referencias)
 
 * * *
 
-#### Metas
+### Metas
 
 * Código para el navegador a fin que valide el código HTML de archivo: 
 ``` html
@@ -42,17 +42,18 @@
 <meta name="x-apple-disable-message-reformatting"> 
 ```
 
-#### Estilos
+### Estilos
 
-* Para evitar el crecimiento del texto en versiones moviles usar text-size-adjust: 100%; .
+* Añadir en el selector universal text-size-adjust: 100% para evitar el crecimiento del texto en versiones moviles.
 * Usar padding y margin 0 en el body.
+* Si se usa titulos (h1,h2,...) párrafos o divs añadir padding y margin 0.
 * Border-collapse: collapse; en las tablas para evitar espacios en el border.
 * display block; en las imagenes para evitar que se añada espacios debajo de ellas.
 * Colores: usar los seis caracteres del código hexagesimal.
 
 * * *
 
-#### Contenido
+### Contenido
 
 A. Tablas
 * Usar atributos html al máximo.
@@ -79,12 +80,32 @@ D. Botones
 
 2. Con Relleno
 * Una tabla sin ancho. tr>
-* Una celda con border-radius y color de fondo.
+* Una celda con padding, border-radius y color de fondo.
 * Un enlace con sus estilos especificos.
 
 * Colocar en los enlaces href validos para las pruebas del mail.
 
 * * *
+
+### Varios
+
+A. Imagenes
+* Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
+* Mantener un tamaño ligero en las imágenes (standard 250kb - ideal 100kb).
+* Si la imagen se usa como enlace, con borde 0 se evita el borde azul típico de los enlaces.
+* Establecer ancho como atributo HTML para Outlook, y CSS para Gmail y Yahoo.
+* Para Outlook establecer ancho con atributo HTML, y para Gmail y Yahoo usar CSS. 
+
+B. Tipografias
+* Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
+ [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
+
+* Apple Mail y algunos otros soportan @import y @font-face.
+
+C. Videos
+* El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente
+
+* * * 
 
 ### Servicios de Mail
 
@@ -105,26 +126,6 @@ C. Gmail
 * 
 
 * * *
-
-#### Varios
-
-A. Imagenes
-* Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
-* Mantener un tamaño ligero en las imágenes (standard 250kb - ideal 100kb).
-* Si la imagen se usa como enlace, con borde 0 se evita el borde azul típico de los enlaces.
-* Establecer ancho como atributo HTML para Outlook, y CSS para Gmail y Yahoo.
-* Para Outlook establecer ancho con atributo HTML, y para Gmail y Yahoo usar CSS. 
-
-B. Tipografias
-* Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
- [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
-
-* Apple Mail y algunos otros soportan @import y @font-face.
-
-C. Videos
-* El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente
-
-* * * 
 
 ## Referencias
 
