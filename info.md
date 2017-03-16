@@ -55,7 +55,6 @@
 #### Contenido
 
 A. Tablas
-
 * Usar atributos html al máximo.
 * En tablas agregar atributos border=0, cellpadding=0, cellspacing=0.
 * Una tabla con una ancho de 100% que actuará como en body del documento. 
@@ -72,10 +71,16 @@ C. Fondos
 * Para imagenes de fondo usar el atributo HTML background en las celdas (td)
 
 D. Botones
+1. Con Borde
+* Una tabla sin ancho. tr>td>
+* Usar una tabla con border-collapse separate, border-radius y borde. tr>
+* Una celda con padding y estilos de fuentes.
+* Un enlace con sus estilos especificos.
 
-* tabla width 100%>tr>td>table sin width>tr>td>table bordercollapse separate, border y border radius>tr>td padding y estilos de fonts>a estilos espacificos para enlace
-
-* tabla width 100%>tr>td>table sin width>tr>td border-radius, color de fondo>a estilos especificos del enlace.
+2. Con Relleno
+* Una tabla sin ancho. tr>
+* Una celda con border-radius y color de fondo.
+* Un enlace con sus estilos especificos.
 
 * Colocar en los enlaces href validos para las pruebas del mail.
 
@@ -104,40 +109,34 @@ C. Gmail
 #### Varios
 
 A. Imagenes
-
 * Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
 * Mantener un tamaño ligero en las imágenes (standard 250kb - ideal 100kb).
 * Si la imagen se usa como enlace, con borde 0 se evita el borde azul típico de los enlaces.
 * Establecer ancho como atributo HTML para Outlook, y CSS para Gmail y Yahoo.
 * Para Outlook establecer ancho con atributo HTML, y para Gmail y Yahoo usar CSS. 
 
-
 B. Tipografias
-
 * Fuentes como Arial, Verdana, Georgia, Times New Roman, Courier y Comic Sans son confiables y soportadas por la mayoria de los servicios de mail. 
  [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing)
 
 * Apple Mail y algunos otros soportan @import y @font-face.
 
 C. Videos
-
 * El video es compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente
 
 * * * 
 
-## Referencias 
+## Referencias
 
+* [CSS Support Guide](https://www.campaignmonitor.com/css/) 
 * [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
-
-* [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com)
-
 * [Media Queries: max-width y min-width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width)
-
+* [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com)
 * [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps)
 * [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css)
-
 * [Tipografias](https://envato.com/blog/experimental-typography-email/)
 
+### Más información
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/)
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/)
