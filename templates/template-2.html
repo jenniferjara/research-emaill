@@ -9,9 +9,9 @@
 	<title>Template Email 2 Columns</title>
 	<style>
 		*{
-			-ms-text-size-adjust: 100%;
-			-moz-text-size-adjust: 100%;
-			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100% !important;
+			-moz-text-size-adjust: 100% !important;
+			-webkit-text-size-adjust: 100% !important;
 		}
 
 		body{
@@ -22,29 +22,25 @@
 		}
 
 		table, td{
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
 		}
 		table{
-			border-collapse: collapse;
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			margin: 0 auto !important;
+			table-layout: fixed !important;
 		}
 		td{
 			font-family: Helvetica;
 		}
 		img{
 			display: block !important;
+			-ms-interpolation-mode: bicubic !important;
 		}
 		h1,h2,h3,h4,h5,h6,div,p{
 			padding: 0px !important;
 			margin: 0px !important;
-		}
-		.preheader { 
-			display:none !important; 
-			visibility:hidden; 
-			opacity:0; 
-			color:transparent; 
-			height:0; 
-			width:0; 
 		}
 		.back{
 			background-size: cover !important;
@@ -113,11 +109,11 @@
 						</tr>
 						<tr>
 							<td align="center" valign="top" background="http://i.imgur.com/5zo9kHA.png" bgcolor="#83a6a7" class="back">
-								<!--[if gte mso 9]>
-								<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-								<v:fill type="tile" src="http://i.imgur.com/5zo9kHA.png" color="#7bceeb"/>
-								</v:background>
-								<![endif]-->
+								<!--[if (gte mso 9)|(IE)]>
+                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+                                <v:fill type="tile" src="http://i.imgur.com/5zo9kHA.png"/>
+                                <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                                <![endif]-->
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="back">
 									<tr>
 										<td align="center" valign="top" style="padding: 60px 0px;">
@@ -129,6 +125,10 @@
 										</td>
 									</tr>
 								</table>
+								<!--[if (gte mso 9)|(IE)]>
+                                </v:textbox>
+                                </v:rect>
+                                <![endif]-->
 							</td>
 						</tr>
 						<tr>

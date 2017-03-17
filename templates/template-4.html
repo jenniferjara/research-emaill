@@ -9,9 +9,9 @@
 	<title>Template Email Mosaicos</title>
 	<style>
 		*{
-			-ms-text-size-adjust: 100%;
-			-moz-text-size-adjust: 100%;
-			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100% !important;
+			-moz-text-size-adjust: 100% !important;
+			-webkit-text-size-adjust: 100% !important;
 		}
 
 		body{
@@ -22,11 +22,14 @@
 		}
 
 		table, td{
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
 		}
 		table{
-			border-collapse: collapse;
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			margin: 0 auto !important;
+			table-layout: fixed !important;
 		}
 		td{
 			font-family: Helvetica;
@@ -34,18 +37,11 @@
 		}
 		img{
 			display: block !important;
+			-ms-interpolation-mode: bicubic !important;
 		}
 		h1,h2,h3,h4,h5,h6,div,p{
 			padding: 0px !important;
 			margin: 0px !important;
-		}
-		.preheader { 
-			display:none !important; 
-			visibility:hidden; 
-			opacity:0; 
-			color:transparent; 
-			height:0; 
-			width:0; 
 		}
 		.back{
 			background-size: cover !important;
@@ -101,143 +97,136 @@
 	</style>
 </head>
 <body>
-	<center style="text-align: -webkit-center;">
-		<table bgcolor="EBEBEB" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
-			<tr>
-				<td align="center" valign="top">
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="home" bgcolor="FFFFFF">
-						<tr>
-							<td align="center" bgcolor="#26ABE2" valign="top" style="padding: 9px 0px;">
-								<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
-									<tr>
-										<td align="center" valign="top">
-											<table border="0" cellpadding="0" cellspacing="0" width="390">
-												<tr>
-													<td align="center" valign="top" style="padding: 0 16px 9px 16px; color: #FFFFFF;font-size: 12px;">Subject del mail</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-								<!--[if gte mso 9]>
-								<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-								<v:fill type="tile" src="http://i.imgur.com/5zo9kHA.png" color="#7bceeb"/>
-								</v:background>
-								<![endif]-->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="back">
-									<tr>
-										<td align="center" valign="top" style="padding: 40px 0;">
-											<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/logo_ohsnap.png" alt="banner-middle" width="320" style="max-width: 600px;" />
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tr>
-										<td valign="top" style="font-weight: lighter; padding: 0 18px 9px;">
-											<h1 style="color: #26ABE2;font-family: Georgia;font-weight: lighter;line-height: 125%;">Photos from my trip to Europe</h1>
-											<h4 style="color: #606060;font-family: Georgia; font-weight: lighter;line-height: 125%; font-size: 20px;">July 2011</h4>
-										</td>
-									</tr>
-									<tr>
-										<td valign="top" style="padding: 9px 18px;color: #606060;font-size: 20px;">My summer vacation was a photographer's dream! I'm thrilled to share with you some images from my recent trips to Paris and London. Going through these photos, I felt like I was re-living the experience—so thanks to my loyal readers for giving me that opportunity! I hope you like my pictures.</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tr>
-										<td align="center" valign="top" class="home-sect">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%">
-												<tr>
-													<td align="center" valign="top" style="padding: 20px 0px;">
-														<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_02_294x27554f66a.png" width="264" alt="banner">
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td align="center" valign="top" class="home-sect">
-											<table border="0" cellpadding="0" cellspacing="0" width="100%">
-												<tr>
-													<td align="center" valign="top" style="padding: 20px 0px;">
-														<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_03_294x275f66941.png" alt="banner" width="264" />
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-								<table border="0" cellspacing="0" cellpadding="0" width="100%">
-									<tr>
-										<td align="center" valign="top"><img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_01_600x400b5d1b8.png" alt="picture 3" width="564" class="imgContent" /></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td align="center" valign="top">
-								<table border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tr>
-										<td align="center" valign="top" class="home-sect">
-											<table border="0" cellpadding="0" cellspacing="0" width="273">
-												<tr>
-													<td align="center" valign="top" style="padding: 20px 0px;">
-														<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_04_294x2758c4857.png" width="264" alt="banner">
-													</td>
-												</tr>
-											</table>
-										</td>
-										<td align="center" valign="top" class="home-sect">
-											<table border="0" cellpadding="0" cellspacing="0" width="273">
-												<tr>
-													<td align="center" valign="top" style="padding: 20px 0px;">
-														<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/_s_Hertogenbosch_Markt_61_version_024a4f73d62dca.jpg" alt="banner" width="264" />
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td align="center" bgcolor="EBEBEB" class="footer" style="padding: 30px 0px;">
-								<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-									<tr>
-										<td align="center" valign="top">
-											<table border="0" cellspacing="0" cellpadding="0">
-												<tr>
-													<td align="center" valign="top" style="color:#606060; font-family: Helvetica; padding: 15px 30px;line-height: 100%;" class="footer-text">
-														Nombre de la empresa<br>
-													Dirección de la empresa<br>
-													Por favor, no respondas a este correo electrónico.<br>
-														Para consultas visítanos en <a style="text-decoration: underline; color: #464545;" href="http//ww.dirección_web.com/">www.dirección_web</a><br>
-													<em>© 2017 Nombre de la empresa - Todos los derechos reservados.</em>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
-	</center>
+	<table bgcolor="EBEBEB" border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;">
+		<tr>
+			<td align="center" valign="top">
+				<table align="center" border="0" cellspacing="0" cellpadding="0" width="600" class="home" bgcolor="FFFFFF">
+					<tr>
+						<td align="center" bgcolor="#26ABE2" valign="top" style="padding: 9px 0px;">
+							<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+								<tr>
+									<td align="center" valign="top">
+										<table border="0" cellpadding="0" cellspacing="0" width="390">
+											<tr>
+												<td align="center" valign="top" style="padding: 0 16px 9px 16px; color: #FFFFFF;font-size: 12px;">Subject del mail</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%" class="back">
+								<tr>
+									<td align="center" valign="top" style="padding: 40px 0;">
+										<img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/logo_ohsnap.png" alt="banner-middle" width="320" style="max-width: 600px;" />
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td valign="top" style="font-weight: lighter; padding: 0 18px 9px;">
+										<h1 style="color: #26ABE2;font-family: Georgia;font-weight: lighter;line-height: 125%;">Photos from my trip to Europe</h1>
+										<h4 style="color: #606060;font-family: Georgia; font-weight: lighter;line-height: 125%; font-size: 20px;">July 2011</h4>
+									</td>
+								</tr>
+								<tr>
+									<td valign="top" style="padding: 9px 18px;color: #606060;font-size: 20px;">My summer vacation was a photographer's dream! I'm thrilled to share with you some images from my recent trips to Paris and London. Going through these photos, I felt like I was re-living the experience—so thanks to my loyal readers for giving me that opportunity! I hope you like my pictures.</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td align="center" valign="top" class="home-sect">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td align="center" valign="top" style="padding: 20px 0px;">
+													<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_02_294x27554f66a.png" width="264" alt="banner">
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td align="center" valign="top" class="home-sect">
+										<table border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<td align="center" valign="top" style="padding: 20px 0px;">
+													<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_03_294x275f66941.png" alt="banner" width="264" />
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" cellspacing="0" cellpadding="0" width="100%">
+								<tr>
+									<td align="center" valign="top"><img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_01_600x400b5d1b8.png" alt="picture 3" width="564" class="imgContent" /></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td align="center" valign="top" class="home-sect">
+										<table border="0" cellpadding="0" cellspacing="0" width="273">
+											<tr>
+												<td align="center" valign="top" style="padding: 20px 0px;">
+													<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/europe_04_294x2758c4857.png" width="264" alt="banner">
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td align="center" valign="top" class="home-sect">
+										<table border="0" cellpadding="0" cellspacing="0" width="273">
+											<tr>
+												<td align="center" valign="top" style="padding: 20px 0px;">
+													<img src="https://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/_s_Hertogenbosch_Markt_61_version_024a4f73d62dca.jpg" alt="banner" width="264" />
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" bgcolor="EBEBEB" class="footer" style="padding: 30px 0px;">
+							<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td align="center" valign="top">
+										<table border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="center" valign="top" style="color:#606060; font-family: Helvetica; padding: 15px 30px;line-height: 100%;" class="footer-text">
+													Nombre de la empresa<br>
+												Dirección de la empresa<br>
+												Por favor, no respondas a este correo electrónico.<br>
+													Para consultas visítanos en <a style="text-decoration: underline; color: #464545;" href="http//ww.dirección_web.com/">www.dirección_web</a><br>
+												<em>© 2017 Nombre de la empresa - Todos los derechos reservados.</em>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </body>
 </html>

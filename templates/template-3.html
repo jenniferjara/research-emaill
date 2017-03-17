@@ -9,25 +9,27 @@
 	<title>Template Email 3 Columns</title>
 	<style>
 		*{
-			-ms-text-size-adjust: 100%;
-			-moz-text-size-adjust: 100%;
-			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100% !important;
+			-moz-text-size-adjust: 100% !important;
+			-webkit-text-size-adjust: 100% !important;
 		}
 
 		body{
 			padding: 0px !important;
-			Margin: 0px !important;
+			margin: 0px !important;
 			height: 100% !important;
 			width: 100% !important;
 		}
 
 		table, td{
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
+			mso-table-lspace: 0pt !important;
+			mso-table-rspace: 0pt !important;
 		}
 		table{
-			border-collapse: collapse;
-			mso-line-height-rule: exactly !important;
+			border-spacing: 0 !important;
+			border-collapse: collapse !important;
+			margin: 0 auto !important;
+			table-layout: fixed !important;
 		}
 		td{
 			font-family: Helvetica;
@@ -36,18 +38,11 @@
 		}
 		img{
 			display: block !important;
+			-ms-interpolation-mode: bicubic !important;
 		}
 		h1,h2,h3,h4,h5,h6,div,p{
 			padding: 0px !important;
-			Margin: 0px !important;
-		}
-		.preheader { 
-			display:none !important; 
-			visibility:hidden; 
-			opacity:0; 
-			color:transparent; 
-			height:0; 
-			width:0; 
+			margin: 0px !important;
 		}
 		.back{
 			background-size: cover !important;
@@ -139,11 +134,11 @@
 					</tr>
 					<tr>
 						<td align="center" valign="top" background="http://i.imgur.com/7fO54zJ.png" bgcolor="#83a6a7" class="back" style="padding: 40px 0px;">
-							<!--[if gte mso 9]>
-							<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-							<v:fill type="tile" src="http://i.imgur.com/5zo9kHA.png" color="#7bceeb"/>
-							</v:background>
-							<![endif]-->
+							<!--[if (gte mso 9)|(IE)]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:100%; height: auto;">
+                            <v:fill type="tile" src="http://i.imgur.com/7fO54zJ.png" color="#222222" />
+                            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                            <![endif]-->
 							<table border="0" cellpadding="0" cellspacing="0" width="600">
 								<tr>
 									<td align="center" valign="top" style="padding: 40px 0 30px 0;;">
@@ -164,6 +159,10 @@
 									</td>
 								</tr>
 							</table>
+							<!--[if (gte mso 9)|(IE)]>
+                            </v:textbox>
+                            </v:rect>
+                            <![endif]-->
 						</td>
 					</tr>
 					<tr>
