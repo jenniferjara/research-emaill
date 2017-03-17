@@ -147,3 +147,21 @@ Imagenes de fondo en Outlook 2007/10/13 y en Window Mail 2010
  * [Background con VML](https://backgrounds.cm/)
 
 las imagenes de fondo con VML tienen soporte en Outlook 2007 2013, pero no en Outlook.com o Window Live
+
+<td valign="top" height="700" background="Image Live URL Here" bgcolor="#f7901e" style="height:700px; background-image:url(Image Live URL Here);background-color: #f7901e;">
+  <!--[if gte mso 9]>
+  <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block; width: 550px; height: 700px;" src="Image Live URL Here" />
+  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style=" border: 0;display: inline-block;position: absolute; width: 550px; height: 700px;">
+    <v:fill  opacity="0%" color="#f7901e"  />
+    <v:textbox inset="0,0,0,0">
+      <![endif]--> 
+	<div>
+		<!-- HTML Content Here -->
+	</div>
+      <!--[if gte mso 9]> 
+    </v:textbox>
+    </v:fill>
+  </v:rect>
+  </v:image>
+  <![endif]-->
+</td>

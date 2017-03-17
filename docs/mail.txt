@@ -1,5 +1,5 @@
 1. Metas
-* Código para el navegador a fin que valide el código HTML de archivo: 
+* Codigo para el navegador a fin que valide el código HTML de archivo: 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 
 * Brinda soporte para los caracteres Unicode del documento: 
@@ -19,12 +19,16 @@
 
 2. Estilos en el Head
 
+ * Selector Universal: -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; detiene que Windows mobile redimencione el texto pequeño. 
  * Body: añadir padding y margin 0.
  * Tablas: Border-collapse: collapse; evita espacios en los border.
- * Tablas y celdas: mso-table-lspace: 0pt y mso-table-rspace: 0pt, para evitar que Outlook añada espacio entre ellas.
+ * Tablas y celdas: mso-table-lspace: 0pt y mso-table-rspace: 0pt, remueve los espacio entre ellas en Outlook.
  * Titulos, parrafos o divs, añadir padding y margin 0.
- * En imagenes añadir display: block, para evitar Outlook les agregue espacios debajo.
- * Colores: usar los seis digitos de cógido hexadecimal.
+ * En imagenes añadir:
+   + display: block, para evitar Outlook les agregue espacios debajo; 
+   + -ms-interpolation-mode: bicubic; escalado suave de las imagenes en IE.
+   + max-width: 100%; se adaptará al tamaño de su contenedor.
+ * Colores: usar los seis dígitos de código hexadecimal.
 
 3. Contenido
 
@@ -59,11 +63,11 @@ D. Botones
   + Una celda con padding, border-radius y color de fondo.
   + Un enlace con sus estilos especificos.
 
- * Asegurate de colocar href validos para las pruebas del mail.
+ * Asegurate de colocar href validos (con http - https) para las pruebas del mail.
 
 E. Imagenes
 
- * Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
+ * Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen. 
  * Mantener un peso ligero en las imágenes (standard 250kb - ideal 100kb).
  * Border=0 evita que las imagenes tengan un border azul al usarlas con enlaces.
  * Añadir ancho con atributo html a la imagen para Outlook; Gmail y Yahoo soportan CSS (inline o clases).
@@ -88,7 +92,7 @@ A. Outlook
 
 B. Yahoo 
 
- * Centrar los elementos en una tabla con table-layout: fixed; .
+ * Centrar los elementos en una tabla con table-layout: fixed;.
  * Si un elemento tiene estilos especificos usar estilos inline más !important.
 
 C. Gmail
