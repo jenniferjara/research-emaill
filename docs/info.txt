@@ -218,3 +218,13 @@
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/)
 * [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email)
 * [Background con VML](https://backgrounds.cm/)
+
+**********************************************
+
+img 
+- establece la calidad de las imagenes escaladas por el browser.
+	image-rendering: optimizeQuality; - Mozilla
+	mos-interpolation-mode:bicubic; - IE
+
+linea de altura en Outlook
+	mso-line-height-rule:exactly;

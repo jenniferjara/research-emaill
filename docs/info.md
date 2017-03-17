@@ -35,16 +35,16 @@
 ``` html 
 <meta name="x-apple-disable-message-reformatting"> 
 ```
+* [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email)
 
 ### Estilos en el Head
 
-* En el selector universal añadir text-size-adjust: 100% para evitar el crecimiento del texto en versiones moviles, con los prefijo por navegador.
-* En el Body usar padding y margin 0.
-* Border-collapse: collapse; en las tablas para evitar espacios en el border.
-* En las tablas y celdas añadir mso-table-lspace: 0pt y 	mso-table-rspace: 0pt para que Outlook no añada espacios entre ellas.
-* Si usas titulos (h1,h2,...) párrafos o divs añadir padding y margin 0.
-* Display block; en las imagenes (img) para evitar que se añada espacios debajo de ellas.
-* Usar los seis caracteres del código hexadecimal de los colores.
+ * Body: añadir padding y margin 0.
+ * Tablas: Border-collapse: collapse; evita espacios en los border.
+ * Tablas y celdas: mso-table-lspace: 0pt y 	mso-table-rspace: 0pt, evita que Outlook añada espacio entre ellas.
+ * Titulos, parrafos o divs, añadir padding y margin 0.
+ * Imagenes: display block evita que se añadan espacios debajo de ellas.
+ * Colores: usar los seis digitos de cógido hexadecimal..
 
 * * *
 
@@ -92,11 +92,12 @@ E. Imagenes
 * Establecer ancho como atributo HTML para Outlook, y CSS para Gmail y Yahoo.
 * Para Outlook establecer ancho con atributo HTML, y para Gmail y Yahoo usar CSS. 
 
-F. Tipografias
+F. Fuentes
 
 * Fuentes como Arial, Comic Sans, Courier, Georgia, Verdana, Times New Roman; son confiables y soportadas por los clientes de mail.
  [Fonts en Email](https://help.sharpspring.com/hc/en-us/articles/115001033467-Using-Fonts-to-Get-the-Most-Out-of-Your-Email-Marketing) .
 * El método @import tiene soporte en dispositivos iOS y Apple Mail. No tiene soporte en Gmail y Outlook o Yahoo.
+* [Tipografias](https://envato.com/blog/experimental-typography-email/)
 
 G. Videos 
 
@@ -112,6 +113,7 @@ A. Outlook
 * Fuerza a Outlook a respetar el alto de la tabla: mso-line-height-rule: exactly; .
 * Agregar condicionales <!--[if mso]>Outlook<![endif]--> para especificaciones de estilos, fondos de imagen o estructura en Outlook.
 *  Margin (con mayúscula) funciona en Outlook.
+* [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com)
 
 B. Yahoo 
 
@@ -123,6 +125,8 @@ C. Gmail
 * Soporta estilos en el head y especificaciones en las media queries usando !important.
 * Usar un bloque para estilos generales y otro para Media Queries.
 * Gmail no es compatible con selectores de atributos y para Yahoo ya no es necesario el uso de ellos.
+* [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps)
+* [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css)
 
 
 * * *
@@ -132,14 +136,14 @@ C. Gmail
 * [CSS Support Guide](https://www.campaignmonitor.com/css/) 
 * [Building Email HTML](https://www.smashingmagazine.com/2017/01/introduction-building-sending-html-email-for-web-developers/)
 * [Media Queries: max-width y min-width](https://www.emailonacid.com/blog/article/email-development/emailology_media_queries_demystified_min-width_and_max-width)
-* [Emails in Outlook](https://www.emailonacid.com/blog/article/email-development/tips_and_tricks_outlook.com)
-* [Email Development in Gmail](https://www.emailonacid.com/blog/article/email-development/12_things_you_must_know_when_developing_for_gmail_and_gmail_mobile_apps)
-* [Gmail CSS Supported](https://developers.google.com/gmail/design/reference/supported_css)
-* [Tipografias](https://envato.com/blog/experimental-typography-email/)
 
 ### Más información
 
 * [HTeuMeuLeu en Medium](https://emails.hteumeuleu.com/)
 * [Blog de Lee Munroe](http://www.leemunroe.com/blog/)
-* [Email Meta Tag](https://www.emailonacid.com/blog/article/email-development/demystifying-meta-tags-in-email)
-* [Background con VML](https://backgrounds.cm/)
+
+Imagenes de fondo en Outlook 2007/10/13 y en Window Mail 2010
+ - Usa VML, junto a condicionales para outlook.
+ * [Background con VML](https://backgrounds.cm/)
+
+las imagenes de fondo con VML tienen soporte en Outlook 2007 2013, pero no en Outlook.com o Window Live

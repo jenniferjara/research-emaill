@@ -1,0 +1,99 @@
+1. Metas
+* Código para el navegador a fin que valide el código HTML de archivo: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+* Brinda soporte para los caracteres Unicode del documento: 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+* Control en las vistas móvil  
+<meta name="viewport" content="width=device-width"> 
+
+* Permite una vista responsive en Windows Phone: 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+
+* Evita que los números telefonicos aparezcan como link (cambiar a ``` telephone=yes ``` para que se vean como links)
+<meta name="format-detection" content="telephone=no">
+
+* Deshabilita el auto-scale en iOS 10 mail: 
+<meta name="x-apple-disable-message-reformatting"> 
+
+2. Estilos en el Head
+
+ * Body: añadir padding y margin 0.
+ * Tablas: Border-collapse: collapse; evita espacios en los border.
+ * Tablas y celdas: mso-table-lspace: 0pt y mso-table-rspace: 0pt, para evitar que Outlook añada espacio entre ellas.
+ * Titulos, parrafos o divs, añadir padding y margin 0.
+ * En imagenes añadir display: block, para evitar Outlook les agregue espacios debajo.
+ * Colores: usar los seis digitos de cógido hexadecimal.
+
+3. Contenido
+
+A. Tablas
+
+ * Agregar atributos border=0, cellpadding=0, cellspacing=0.
+ * Una tabla con una ancho de 100% que actuará como en body del documento. 
+ * Una tabla con un ancho de 600px, es un ancho seguro para la visualizacipon del documento en los clientes de mail; y align center para centrar las celdas.
+ * En las tablas siguientes del documento se puede usar anchos en porcentaje; si la tabla contiene elementos con medidas fijas usar anchos fijos tambien en la tabla.
+
+B. Celdas
+
+ * Agregar atributos align(alineamiento) y valign(alineamiento vertical).
+ * Es seguro usar relleno (padding) en las celdas (td), en otros elementos (como divs o párrafos) tiene un comportamiento diferente en Outlook. 
+ * Los estilos para fuentes y textos son seguros de aplicar en las celdas, y tambien evitas que Yahoo sobreescriba tus estilos.
+
+C. Fondos
+
+ * Añadir color de fondo con el atributo HTML bgcolor y con los seis caracteres hexadecimales.
+ * Añadir una imagen de fondo usando el atributo HTML backgroound, para que tambien funciones en Outlook.
+
+D. Botones
+
+ 1. Con Borde
+  + Una tabla sin ancho. (tr>td>)
+  + Usar una tabla con border-collapse separate, border-radius y borde. (tr>)
+  + Una celda con padding y estilos de fuentes.
+  + Un enlace con sus estilos especificos.
+
+ 2. Con Relleno
+  + Una tabla sin ancho. (tr>)
+  + Una celda con padding, border-radius y color de fondo.
+  + Un enlace con sus estilos especificos.
+
+ * Asegurate de colocar href validos para las pruebas del mail.
+
+E. Imagenes
+
+ * Usar Alt adecuados para dar referencia al usuario del contenido de la imagen en caso no carguen.
+ * Mantener un peso ligero en las imágenes (standard 250kb - ideal 100kb).
+ * Border=0 evita que las imagenes tengan un border azul al usarlas con enlaces.
+ * Añadir ancho con atributo html a la imagen para Outlook; Gmail y Yahoo soportan CSS (inline o clases).
+ 
+
+F. Fuentes
+
+ * Fuentes como Arial, Comic Sans, Courier, Georgia, Verdana, Times New Roman; son confiables y soportadas por los clientes de mail.
+ * El método @import tiene soporte en dispositivos iOS y Apple Mail, en Gmail y Outlook no tiene soporte.
+
+G. Videos
+
+ * Compatible con iOS, Apple Mail y Outlook.com, usar media queries para ocultar o mostrar segun el tipo de cliente.
+
+5. Servicios de mail
+
+A. Outlook
+
+ * Fuerza a Outlook a respetar la altura de la celda (td): mso-line-height-rule: exactly; .
+ * Usar condicionales <!--[if mso]>Outlook<![endif]--> para especificaciones en Outlook segun su versión.
+ * Utlizar márgenes (margin) con letra mayúscula.
+
+B. Yahoo 
+
+ * Centrar los elementos en una tabla con table-layout: fixed; .
+ * Si un elemento tiene estilos especificos usar estilos inline más !important.
+
+C. Gmail
+
+ * Soporta estilos en el head y especificaciones en las media queries usando !important. 
+ * Gmail no soporta más de 8192 cáracteres por bloque de estilos.
+ * Usar un bloque para estilos y otro para Media Queries. 
+ * Gmail no es compatible con selectores de atributos y en Yahoo ya no es necesario el uso de ellos.
