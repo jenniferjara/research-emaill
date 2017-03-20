@@ -34,14 +34,14 @@
 
 A. Tablas
 
- * Agregar atributos border=0, cellpadding=0, cellspacing=0.
+ * Agregar atributos html border=0, cellpadding=0, cellspacing=0.
  * Una tabla con una ancho de 100% que actuará como en body del documento. 
  * Una tabla con un ancho de 600px, es un ancho seguro para la visualizacipon del documento en los clientes de mail; y align center para centrar las celdas.
  * En las tablas siguientes del documento se puede usar anchos en porcentaje; si la tabla contiene elementos con medidas fijas usar anchos fijos tambien en la tabla.
 
 B. Celdas
 
- * Agregar atributos align(alineamiento) y valign(alineamiento vertical).
+ * Agregar atributos html align(alineamiento) y valign(alineamiento vertical).
  * Es seguro usar relleno (padding) en las celdas (td), en otros elementos (como divs o párrafos) tiene un comportamiento diferente en Outlook. 
  * Los estilos para fuentes y textos son seguros de aplicar en las celdas, y tambien evitas que Yahoo sobreescriba tus estilos.
 

@@ -9,9 +9,9 @@
 	<title>Template Email 2 Columns</title>
 	<style>
 		*{
-			-ms-text-size-adjust: 100% !important;
-			-moz-text-size-adjust: 100% !important;
-			-webkit-text-size-adjust: 100% !important;
+			-ms-text-size-adjust: none !important;
+			-moz-text-size-adjust: none !important;
+			-webkit-text-size-adjust: none !important;
 		}
 
 		body{
@@ -28,15 +28,13 @@
 		table{
 			border-spacing: 0 !important;
 			border-collapse: collapse !important;
-			margin: 0 auto !important;
-			table-layout: fixed !important;
 		}
 		td{
 			font-family: Helvetica;
 		}
 		img{
 			display: block !important;
-			-ms-interpolation-mode: bicubic !important;
+			width: 100%;
 		}
 		h1,h2,h3,h4,h5,h6,div,p{
 			padding: 0px !important;
@@ -88,7 +86,7 @@
 </head>
 <body>
 	<center style="text-align: -webkit-center;">
-		<table border="0" cellspacing="0" cellpadding="0" width="100%" style="table-layout: fixed;">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
 			<tr>
 				<td align="center" valign="top">
 					<table align="center" border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" width="600" class="home" style="border: 1px solid #dddddd;">
@@ -108,13 +106,13 @@
 							</td>
 						</tr>
 						<tr>
+						  <!--[if gte mso 9]>
+						  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+						    <v:fill type="tile" src="http://i.imgur.com/5zo9kHA.png" color="#83a6a7" />
+						    <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+						  <![endif]-->
 							<td align="center" valign="top" background="http://i.imgur.com/5zo9kHA.png" bgcolor="#83a6a7" class="back">
-								<!--[if (gte mso 9)|(IE)]>
-                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
-                                <v:fill type="tile" src="http://i.imgur.com/5zo9kHA.png"/>
-                                <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-                                <![endif]-->
-								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="back">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" class="back">
 									<tr>
 										<td align="center" valign="top" style="padding: 60px 0px;">
 											<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top: 0;">
@@ -125,17 +123,17 @@
 										</td>
 									</tr>
 								</table>
-								<!--[if (gte mso 9)|(IE)]>
-                                </v:textbox>
-                                </v:rect>
-                                <![endif]-->
 							</td>
+						  <!--[if gte mso 9]>
+						    </v:textbox>
+						  </v:rect>
+						  <![endif]-->
 						</tr>
 						<tr>
 							<td valign="top" align="center" style="padding: 0 18px 9px;border-bottom: 1px solid #dddddd;">
 								<table border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;">
 									<tr>
-										<td align="center" valign="top">
+										<td align="center" valign="top" style="padding-top: 15px;">
 											<table border="0" cellpadding="0" cellspacing="0" width="100%">
 												<tr>
 													<td valign="top" style="padding: 0 9px 18px 9px;">
